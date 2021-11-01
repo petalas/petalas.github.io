@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Nick Petalas <webmasternikos@gmail.com>",
   "dependencies": {
+    "autoprefixer": "^10.4.0",
     "gatsby": "^4.0.2",
     "gatsby-plugin-gatsby-cloud": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",
@@ -17,9 +18,11 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
+    "gatsby-plugin-postcss": "^5.0.0",
     "prettier": "^2.4.1"
   },
   "keywords": [
