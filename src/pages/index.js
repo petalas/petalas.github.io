@@ -7,21 +7,19 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
-    <p class="m-2 text-center bg-blue-500">Page 1</p>
+    <Seo title="Nick Petalas" />
+    <div class="text-primary-500 p-2 rounded-xl">
+      <p class="text-lg text-center">Hello</p>
+      <StaticImage
+        class="m-1"
+        src="../images/nick.jpg"
+        width={300}
+        quality={95}
+        formats={["webp"]}
+        alt="A Gatsby astronaut"
+      />
+    </div>
 
-    <StaticImage
-      class="m-1"
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["webp"]}
-      alt="A Gatsby astronaut"
-    />
-
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-    </p>
   </Layout>
 )
 
