@@ -14,16 +14,14 @@ const Layout = ({children}) => {
   `)
 
   return (
-    <>
-      <div class="min-h-screen flex flex-col justify-between items-stretch bg-primary-800">
-        <main class="flex flex-col flex-1 max-w-sm lg:max-w-2xl xl:max-w-4xl self-center items-center m-2 shadow-lg rounded-xl text-primary-400 opacity-95">
-          {children}
-        </main>
-        <footer class="p-2 mt-2 text-center bg-secondary-800 text-primary-500">
-          © {new Date().getFullYear()}, Nick Petalas
-        </footer>
-      </div>
-    </>
+    <div class="min-h-screen flex flex-col justify-between items-stretch bg-primary-800">
+      <main class="container m-auto p-2 flex flex-col rounded-xl text-primary-400 opacity-95">
+        {children}
+      </main>
+      <footer class="p-2 mt-2 text-center bg-secondary-800 text-primary-500">
+        © {new Date().getFullYear()}, Nick Petalas
+      </footer>
+    </div>
   )
 }
 

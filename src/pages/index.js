@@ -29,9 +29,9 @@ const IndexPage = () => (
       </section>
 
 
-      <section class="lg:p-4 grid gap-1 lg:gap-2 grid-cols-1 lg:grid-cols-2">
+      <section class="grid gap-2 lg:gap-2 grid-cols-1 lg:grid-cols-2">
         {employmentHistory.map(i =>
-          <section class="p-2 border-2 bg-secondary-600">
+          <section class="p-2 bg-secondary-600">
             <Item {...i}></Item>
           </section>
         )}
