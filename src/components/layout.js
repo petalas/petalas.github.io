@@ -15,6 +15,7 @@ const Layout = ({children}) => {
 
   return (
     <div class="min-h-screen flex flex-col justify-between items-stretch bg-primary-800">
+      <header class="p-2 mb-2 text-center bg-secondary-900 text-primary-300">header</header>
       <main class="container m-auto p-2 flex flex-col rounded-xl text-primary-400">
         {children}
       </main>
