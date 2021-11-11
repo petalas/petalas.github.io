@@ -3,5 +3,28 @@
 @tailwind utilities;
 
 a {
-    @apply no-underline hover:shadow-sm hover:text-red-500
+    @apply no-underline
+}
+
+/* https://shadows.brumm.af/ */
+.custom-box-shadow {
+    box-shadow:
+    0px 1.5px 7.1px rgba(0, 0, 0, 0.2),
+    0px 2.7px 12.8px rgba(0, 0, 0, 0.158),
+    0px 3.6px 17.1px rgba(0, 0, 0, 0.138),
+    0px 4.4px 20.3px rgba(0, 0, 0, 0.123),
+    0px 5px 22.9px rgba(0, 0, 0, 0.111),
+    0px 5.7px 26px rgba(0, 0, 0, 0.1),
+    0px 6.9px 31.6px rgba(0, 0, 0, 0.089),
+    0px 8.9px 41.7px rgba(0, 0, 0, 0.077),
+    0px 12.4px 57.8px rgba(0, 0, 0, 0.062),
+    0px 18px 80px rgba(0, 0, 0, 0.042);  
+}
+
+.nav-item {
+    @apply px-2 py-1 border-2
+    text-secondary-200 hover:text-primary-200 hover:bg-primary-700
+    rounded-3xl hover:rounded-xl 
+    transition-all duration-300 ease-linear
+    cursor-pointer
 }
