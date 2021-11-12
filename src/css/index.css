@@ -22,9 +22,14 @@ a {
 }
 
 .nav-item {
-    @apply px-2 py-1 border-2
-    text-secondary-200 hover:text-primary-200 hover:bg-primary-700
-    rounded-3xl hover:rounded-xl 
+    @apply px-2 py-1 
+    flex flex-grow items-center justify-center
+    text-secondary-200 
+    hover:text-primary-200 hover:bg-primary-700
     transition-all duration-300 ease-linear
     cursor-pointer
+}
+
+.nav-icon {
+    @apply w-6 h-6 fill-current
 }
