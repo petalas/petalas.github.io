@@ -33,3 +33,7 @@ a {
 .nav-icon {
     @apply w-6 h-6 fill-current
 }
+
+.project-tile {
+    @apply p-2 border-2 bg-secondary-500 text-primary-200 rounded-lg
+}

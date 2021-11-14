@@ -1,9 +1,9 @@
 import {StaticImage} from "gatsby-plugin-image"
 import * as React from "react"
-import Item from "../components/item"
+import Experience from "../components/experience.section"
 import Layout from "../components/layout"
+import Projects from "../components/projects.section"
 import Seo from "../components/seo"
-import {employmentHistory} from "../data/positions"
 
 
 const IndexPage = () => (
@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Seo title="Nick Petalas Portfolio Homepage" meta="" />
     <div class="flex-1 text-primary-500 flex flex-col text-xs">
 
-      <section id="about" class="p-2 rounded-b-xl flex flex-row bg-secondary-900 border-primary-300 border-b-2 mb-2">
+      <section id="about" class="p-2 rounded-lg flex flex-row bg-secondary-900 border-primary-300 mb-2">
         <StaticImage
           class="w-1/3"
           loading="eager"
@@ -29,19 +29,11 @@ const IndexPage = () => (
       </section>
 
 
-      <section id="experience" class="grid gap-2 grid-cols-1">
-        <h2 class="pt-4 text-lg text-secondary-200">Where I've worked</h2>
-        {employmentHistory.map(i =>
-          <section class="bg-secondary-600 border-secondary-400 border-2 rounded-xl">
-            <Item {...i}></Item>
-          </section>
-        )}
-      </section>
+      <h2 class="pt-4 text-lg text-secondary-200">Where I've worked</h2>
+      <Experience id="experience" class="grid gap-2 grid-cols-1" />
 
-      <section id="projects">
-        <h2 class="pt-4 text-lg text-secondary-200">Some of my side projects</h2>
-        <p>Projects placeholder</p>
-      </section>
+      <h2 class="pt-4 text-lg text-secondary-200">Some of my side projects</h2>
+      <Projects id="projects" />
 
       <section id="links">
         <h2 class="pt-4 text-lg text-secondary-200">Get in touch</h2>
