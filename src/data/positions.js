@@ -4,7 +4,10 @@ export const employmentHistory = [
         name: `Genesis`,
         timeframe: `Dec 2019 - Present`,
         description: [
-            `Senior platform engineer, working on our new custom web platform and low code tooling.`,
+            `Senior platform engineer, currently mostly working on the latest iteration of our web platform and low code tooling.`,
+            `Mentoring fellow developers, onboarding new starters, offering Tier 3 support (to internal app devs for external clients).`,
+            `I have also been involved in architecting and building previous iterations of the web platform, facilitated the move from our legacy Angular codebase to a custom web components one using stencil.`,
+            `The latest iteration of our web platform is built on top of microsoft fast, with custom web components + design systems.`,
         ]
     },
     {
@@ -14,6 +17,7 @@ export const employmentHistory = [
         description: [
             `Full stack + DevOps on multiple projects`,
             `Mostly health and fitness apps, fitbit / garmin integration etc`,
+            `Architected parts of the 'Initial Rewards' platform, which allows tier 1 clients (mostly casinos) to build landing pages and offer loyalty rewards to their own (tier 2) clients. Integrating multiple Amazon APIs, importing products into custom catalogs + fullfillment through Amazon FBA.`,
             `Also worked on infra: dockerized microservices, API gateway, jenkins pipelines, grafana dashboards etc`,
         ]
     },
@@ -31,7 +35,7 @@ export const employmentHistory = [
         timeframe: 'Oct 2014 - Oct 20116',
         description: [
             `Development of specialized data mining and knowledge extraction tools.`,
-            `Full stack developer for factpanel.com`,
+            `Full stack developer for factpanel.com (internal tooling + dashboards)`,
             `Android development - Erybo's trivia app Quizedia.`,
             `Database administration.`,
             `Automation of quiz/game generation processes.`]
