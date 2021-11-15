@@ -37,3 +37,18 @@ a {
 .project-tile {
     @apply p-2 border-2 bg-secondary-500 text-primary-200 rounded-lg
 }
+
+.link-item {
+    @apply flex items-center
+    p-2 m-2
+    border-2 hover:rounded-lg rounded-3xl
+    bg-secondary-700
+    hover:text-primary-700 hover:bg-secondary-300
+    transition-all duration-300 ease-linear
+}
+
+.link-bar {
+    @apply
+    before:flex before:flex-grow before:h-[2px] before:border-[1px] before:rounded-full
+    after:flex after:flex-grow after:h-[2px] after:border-[1px] after:rounded-full
+}

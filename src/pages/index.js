@@ -2,6 +2,7 @@ import {StaticImage} from "gatsby-plugin-image"
 import * as React from "react"
 import Experience from "../components/experience.section"
 import Layout from "../components/layout"
+import Links from "../components/links.section"
 import Projects from "../components/projects.section"
 import Seo from "../components/seo"
 
@@ -35,10 +36,8 @@ const IndexPage = () => (
       <h2 class="pt-4 text-lg text-secondary-200">Some of my side projects</h2>
       <Projects id="projects" />
 
-      <section id="links">
-        <h2 class="pt-4 text-lg text-secondary-200">Get in touch</h2>
-        <p>Links placeholder</p>
-      </section>
+      <h2 class="pt-4 text-lg text-secondary-200">Get in touch</h2>
+      <Links i="links" class="bg-secondary-600 p-2 rounded border-2 border-primary-400 text-secondary-300"/>
     </div>
 
   </Layout>
