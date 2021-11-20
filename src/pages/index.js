@@ -13,16 +13,16 @@ const IndexPage = () => (
     <Seo title="Nick Petalas Portfolio Homepage" meta="" />
     <div class="flex-1 text-primary-500 flex flex-col text-xs">
 
-      <section id="about" class="p-1 md:p-2 rounded-lg flex flex-grow bg-secondary-900 border-primary-300 mb-2">
+      <section id="about" class="p-1 md:p-2 rounded-lg flex flex-grow bg-secondary-900 border-primary-300 mb-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <StaticImage
-          class="w-1/3"
+          class="w-full"
           loading="eager"
           src="../images/nick.jpg"
           quality={95}
           alt="Nick Petalas - Profile Picture"
         />
 
-        <About class="w-2/3 p-1 md:p-2" />
+        <About class="p-1 md:p-2 lg:col-span-2" />
       </section>
 
 
