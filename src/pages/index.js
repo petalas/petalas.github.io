@@ -33,7 +33,7 @@ const IndexPage = () => (
       <Projects id="projects" />
 
       <h2 class="pt-4 text-lg text-secondary-200">Get in touch</h2>
-      <Links i="links" class="bg-secondary-600 p-2 rounded border-2 border-primary-400 text-secondary-300" />
+      <Links id="links" class="bg-secondary-600 p-2 rounded border-2 border-primary-400 text-secondary-300" />
     </div>
 
   </Layout>

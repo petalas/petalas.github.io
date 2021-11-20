@@ -19,7 +19,7 @@ const Links = (props) => {
                     <GithubIcon />
                 </a>
 
-                <a href="https://www.linkedin.com/npetalas/" target="_blank" class="link-item">
+                <a href="https://www.linkedin.com/in/npetalas/" target="_blank" class="link-item">
                     <LinkedinIcon />
                 </a>
 
