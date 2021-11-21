@@ -5,8 +5,8 @@ import {employmentHistory} from "../data/positions";
 const Experience = (props) => {
     return (
         <section {...props}>
-            {employmentHistory.map(i =>
-                <section class="bg-secondary-600 border-secondary-400 border-2 rounded-xl">
+            {employmentHistory.map((i, idx) =>
+                <section key={idx} className="bg-secondary-600 border-secondary-400 border-2 rounded-xl">
                     <Item {...i}></Item>
                 </section>
             )}

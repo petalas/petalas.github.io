@@ -48,32 +48,32 @@ const Header = () => {
 
     return (
         <>
-            <header class="h-12 flex justify-center items-center bg-secondary-900 text-secondary-300 custom-box-shadow z-10">
+            <header className="h-12 flex justify-center items-center bg-secondary-900 text-secondary-300 custom-box-shadow z-10">
 
-                <div ref={toggle} class="nav-toggle md:hidden">
-                    <DownIcon class="nav-icon" onClick={() => toggleNav(false)} />
+                <div ref={toggle} className="nav-toggle md:hidden">
+                    <DownIcon className="nav-icon" onClick={() => toggleNav(false)} />
                 </div>
 
-                <ul ref={navList} class="hidden flex-col fixed top-0 w-full bg-secondary-900 mx-auto md:relative md:flex md:flex-row md:container md:h-full" >
-                    <li class="nav-item" onClick={() => toggleNav(true)}>
-                        <HomeIcon class="nav-icon" />
-                        <Link class="px-2" to="#about">About</Link>
+                <ul ref={navList} className="hidden flex-col fixed top-0 w-full bg-secondary-900 mx-auto md:relative md:flex md:flex-row md:container md:h-full" >
+                    <li className="nav-item" onClick={() => toggleNav(true)}>
+                        <HomeIcon className="nav-icon" />
+                        <Link className="px-2" to="#about">About</Link>
                     </li>
-                    <li class="nav-item" onClick={() => toggleNav(true)}>
-                        <ExpIcon class="nav-icon" />
-                        <Link class="px-2" to="#experience">Experience</Link>
+                    <li className="nav-item" onClick={() => toggleNav(true)}>
+                        <ExpIcon className="nav-icon" />
+                        <Link className="px-2" to="#experience">Experience</Link>
                     </li>
-                    <li class="nav-item" onClick={() => toggleNav(true)}>
-                        <ProjectsIcon class="nav-icon" />
-                        <Link class="px-2" to="#projects">Projects</Link>
+                    <li className="nav-item" onClick={() => toggleNav(true)}>
+                        <ProjectsIcon className="nav-icon" />
+                        <Link className="px-2" to="#projects">Projects</Link>
                     </li>
-                    <li class="nav-item" onClick={() => toggleNav(true)}>
-                        <LinksIcon class="nav-icon" />
-                        <Link class="px-2" to="#links">Links</Link>
+                    <li className="nav-item" onClick={() => toggleNav(true)}>
+                        <LinksIcon className="nav-icon" />
+                        <Link className="px-2" to="#links">Links</Link>
                     </li>
                 </ul>
             </header>
-            <div id="backdrop" class="h-5 bg-secondary-900 mb-4"></div>
+            <div id="backdrop" className="h-5 bg-secondary-900 mb-4"></div>
         </>
     )
 }
