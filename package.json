@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-postcss": "^5.0.0",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.4.1"
   },
   "keywords": [
@@ -35,6 +36,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b deploy-branch"
   }
 }
