@@ -10,7 +10,7 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Nick Petalas Portfolio Homepage" />
+    <Seo title="Portfolio" />
     <div className="flex-1 text-primary-500 flex flex-col text-xs">
 
       <section id="about" className="p-1 md:p-2 rounded-lg flex flex-grow bg-secondary-900 border-primary-300 mb-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
