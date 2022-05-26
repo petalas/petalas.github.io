@@ -37,6 +37,6 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b deploy-branch"
+    "deploy": "gatsby build && gh-pages -d public -b deploy-branch -f"
   }
 }
