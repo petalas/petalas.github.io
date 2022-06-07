@@ -4,7 +4,7 @@ export const employmentHistory = [
         name: `Genesis`,
         timeframe: `Dec 2019 - Present`,
         description: [
-            `Senior platform engineer, currently mostly working on the latest iteration of our web platform and low code tooling.`,
+            `Senior platform engineer, currently working on the latest iteration of our new web platform and low code tooling, also a member of the community success team.`,
             `Mentoring fellow developers, onboarding new starters, offering Tier 3 support (to internal app devs for external clients).`,
             `I have also been involved in architecting and building previous iterations of the web platform, facilitated the move from our legacy Angular codebase to a custom web components one using stencil.`,
             `The latest iteration of our web platform is built on top of microsoft fast, with custom web components + design systems.`,

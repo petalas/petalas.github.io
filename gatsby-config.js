@@ -3,7 +3,7 @@ module.exports = {
     title: `Nick Petalas`,
     description: `Dev portfolio, software engineering and fun projects.`,
     author: `Nick Petalas`,
-    siteUrl: `https://webmasternikos.github.io/`,
+    siteUrl: `https://petalas.github.io/`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

@@ -14,7 +14,7 @@ const Links = (props) => {
                     <EmailIcon />
                 </a>
 
-                <a href="https://github.com/WebmasterNikos/" target="_blank" rel="noreferrer" className="link-item">
+                <a href="https://github.com/petalas/" target="_blank" rel="noreferrer" className="link-item">
                     <GithubIcon />
                 </a>
 
