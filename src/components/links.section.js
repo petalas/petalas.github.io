@@ -18,7 +18,7 @@ const Links = (props) => {
                     <GithubIcon />
                 </a>
 
-                <a href="https://www.linkedin.com/in/npetalas/" target="_blank" rel="noreferrer" className="link-item">
+                <a href="https://www.linkedin.com/in/petalas/" target="_blank" rel="noreferrer" className="link-item">
                     <LinkedinIcon />
                 </a>
 

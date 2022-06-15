@@ -4,11 +4,11 @@ import * as React from "react"
 const Item = ({title, timeframe, name, description}) => {
     return (
         <>
-            <h1 className="p-1 rounded-t-lg flex flex-row justify-between bg-secondary-400 text-primary-900">
+            <h1 className="p-1 rounded-t-lg flex flex-row justify-between bg-primary-800 text-primary-300">
                 <div className="font-bold">{name}</div><div>{timeframe}</div>
             </h1>
-            <div className="p-1 text-primary-400">
-                <h2 className="text-base text-primary-300">{title}</h2>
+            <div className="p-1 text-neutral-200">
+                <h2 className="text-base text-neutral-100">{title}</h2>
                 {description.map ? description.map((i, idx) => <p key={idx}>{i}</p>) : <p>{description}</p>}
             </div>
         </>

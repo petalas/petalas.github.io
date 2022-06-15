@@ -6,7 +6,7 @@ import HomeIcon from "../icons/home";
 import LinksIcon from "../icons/links";
 import ProjectsIcon from "../icons/projects";
 
-const Header = () => {
+const Header = ({bgColor, textColor, hoverBgColor, hoverTextColor}) => {
 
     const navList = React.useRef(null);
     const toggle = React.useRef(null);
@@ -46,34 +46,36 @@ const Header = () => {
         toggle?.current?.classList?.remove('nav-toggle');
     }
 
+    const liStyle = `nav-item ${textColor} ${hoverBgColor} ${hoverTextColor}`;
+
     return (
         <>
-            <header className="h-12 flex justify-center items-center bg-secondary-900 text-secondary-300 custom-box-shadow z-10">
+            <header className={`h-12 flex justify-center items-center ${bgColor} custom-box-shadow z-10`}>
 
                 <div ref={toggle} className="nav-toggle md:hidden">
                     <DownIcon className="nav-icon" onClick={() => toggleNav(false)} />
                 </div>
 
-                <ul ref={navList} className="hidden flex-col fixed top-0 w-full bg-secondary-900 mx-auto md:relative md:flex md:flex-row md:container md:h-full" >
-                    <li className="nav-item" onClick={() => toggleNav(true)}>
+                <ul ref={navList} className={`hidden flex-col fixed top-0 w-full ${bgColor} mx-auto md:relative md:flex md:flex-row md:container md:h-full`} >
+                    <li className={liStyle} onClick={() => toggleNav(true)}>
                         <HomeIcon className="nav-icon" />
                         <Link className="px-2" to="#about">About</Link>
                     </li>
-                    <li className="nav-item" onClick={() => toggleNav(true)}>
+                    <li className={liStyle} onClick={() => toggleNav(true)}>
                         <ExpIcon className="nav-icon" />
                         <Link className="px-2" to="#experience">Experience</Link>
                     </li>
-                    <li className="nav-item" onClick={() => toggleNav(true)}>
+                    <li className={liStyle} onClick={() => toggleNav(true)}>
                         <ProjectsIcon className="nav-icon" />
                         <Link className="px-2" to="#projects">Projects</Link>
                     </li>
-                    <li className="nav-item" onClick={() => toggleNav(true)}>
+                    <li className={liStyle} onClick={() => toggleNav(true)}>
                         <LinksIcon className="nav-icon" />
                         <Link className="px-2" to="#links">Links</Link>
                     </li>
                 </ul>
             </header>
-            <div id="backdrop" className="h-5 bg-secondary-900 mb-4"></div>
+            <div id="backdrop" className={`h-5 ${bgColor} mb-4`}></div>
         </>
     )
 }

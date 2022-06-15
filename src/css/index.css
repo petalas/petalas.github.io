@@ -24,16 +24,14 @@ a {
 .nav-item {
     @apply px-2 py-2 md:py-1
     flex flex-grow items-center justify-center
-    text-secondary-200 
-    hover:text-primary-200 hover:bg-primary-700
     transition-all duration-300 ease-linear
     cursor-pointer
 }
 
 .nav-toggle {
     @apply w-8 h-8 p-1 flex flex-col items-center justify-center rounded-full border-2
-    text-secondary-200 
-    hover:text-primary-200 hover:bg-primary-700
+    text-primary-300 
+    hover:text-primary-200 hover:bg-primary-900
     transition-all duration-300 ease-linear
     cursor-pointer
     fill-current
@@ -44,16 +42,20 @@ a {
 }
 
 .project-tile {
-    @apply p-2 border-2 bg-secondary-500 text-primary-200 rounded-lg
+    @apply p-2 border-2 bg-secondary-900 text-neutral-300 rounded-lg
+}
+
+.project-title {
+    @apply text-lg text-neutral-200 hover:text-neutral-100
 }
 
 .link-item {
     @apply flex items-center
     p-1 m-1 border-[1px] md:border-2 md:p-2 md:m-2
-    hover:rounded-lg rounded-3xl
-    bg-secondary-700
-    hover:text-primary-700 hover:bg-secondary-300
-    transition-all duration-300 ease-linear
+    hover:rounded-xl rounded-3xl
+    bg-secondary-900
+    hover:text-primary-200 hover:bg-secondary-800
+    transition-all duration-200 ease-linear
 }
 
 .link-item > svg {

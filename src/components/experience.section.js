@@ -6,7 +6,7 @@ const Experience = (props) => {
     return (
         <section {...props}>
             {employmentHistory.map((i, idx) =>
-                <section key={idx} className="bg-secondary-600 border-secondary-400 border-2 rounded-xl">
+                <section key={idx} className="bg-neutral-800 border-primary-800 border-2 rounded-xl">
                     <Item {...i}></Item>
                 </section>
             )}

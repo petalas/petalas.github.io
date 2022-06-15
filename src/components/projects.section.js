@@ -6,7 +6,7 @@ const Projects = (props) => {
         <section {...props} className="grid grid-cols-2 gap-2">
 
             <section className="project-tile">
-                <a href="https://github.com/petalas/btc-risk-metric" target="_blank" rel="noreferrer" className="text-lg hover:text-primary-500">BTC Risk Metric</a>
+                <a href="https://github.com/petalas/btc-risk-metric" target="_blank" rel="noreferrer" className="project-title">BTC Risk Metric</a>
                 <StaticImage
                     className="w-full"
                     loading="eager"
@@ -29,7 +29,7 @@ const Projects = (props) => {
             </section>
 
             <section className="project-tile">
-                <a href="https://artgen.xyz/" target="_blank" rel="noreferrer" className="text-lg hover:text-primary-500">artgen.xyz</a>
+                <a href="https://artgen.xyz/" target="_blank" rel="noreferrer" className="project-title">artgen.xyz</a>
                 <StaticImage
                     className="w-full"
                     loading="eager"
