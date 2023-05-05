@@ -11,10 +11,10 @@ const About = (props) => {
     return (
         <section className={className}>
             <h2 className={`text-2xl ${lighter}`}>Hi, I'm Nick</h2>
-            <h3 className={`text-xl ${textColor}`}>Software Engineer based in London, originally from Greece.</h3>
-            <h4 className={`text-lg ${darker}`}>I enjoy learning constantly and strive for continuous self-improvement but also do my best to mentor others, I think knowledge sharing is great in general.</h4>
-            <h4 className={`text-lg ${darker}`}>Typical tech / engineering enthusiast, always looking for new gadgets or projects to play with.</h4>
-            <h4 className={`text-lg ${darker}`}>I'm also into photography, personal finance, crypto, travelling.</h4>
+            <h3 className={`text-xl ${textColor}`}>Senior Software Engineer based in London, originally from Greece.</h3>
+            <h4 className={`text-lg ${darker}`}>I strive for constant self-improvement, enjoy lifelong learning and knowledge sharing.</h4>
+            <h4 className={`text-lg ${darker}`}>Also into travelling all over the world, photography, fitness, finance.</h4>
+            <h4 className={`text-lg ${darker}`}>Tech / engineering enthusiast, always looking for new gadgets or projects to play with.</h4>
         </section>
     );
 }

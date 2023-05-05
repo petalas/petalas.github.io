@@ -2,6 +2,7 @@ import * as React from "react";
 import ArtgenIcon from "../icons/artgen";
 import EmailIcon from "../icons/email";
 import GithubIcon from "../icons/github";
+import InstagramIcon from "../icons/instagram";
 import LinkedinIcon from "../icons/linkedin";
 
 const Links = (props) => {
@@ -24,6 +25,10 @@ const Links = (props) => {
 
                 <a href="https://artgen.xyz/" target="_blank" rel="noreferrer" className="link-item">
                     <ArtgenIcon />
+                </a>
+
+                <a href="https://www.instagram.com/petalas.dev/" target="_blank" rel="noreferrer" className="link-item">
+                    <InstagramIcon />
                 </a>
             </div>
         </div>
