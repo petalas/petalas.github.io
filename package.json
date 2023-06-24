@@ -37,6 +37,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b deploy-branch -f"
+    "add-domain": "echo \"petalas.dev\" > ./public/CNAME",
+    "deploy": "gatsby build && npm run add-domain && gh-pages -d public -b deploy-branch -f"
   }
 }
