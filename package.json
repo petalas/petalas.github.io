@@ -5,9 +5,9 @@
   "version": "0.1.0",
   "author": "Nick Petalas <webmasternikos@gmail.com>",
   "dependencies": {
-    "autoprefixer": "10.4.15",
-    "gatsby": "5.12.3",
-    "gatsby-plugin-gatsby-cloud": "5.12.0",
+    "autoprefixer": "10.4.16",
+    "gatsby": "5.12.4",
+    "gatsby-plugin-gatsby-cloud": "5.12.1",
     "gatsby-plugin-image": "3.12.0",
     "gatsby-plugin-manifest": "5.12.0",
     "gatsby-plugin-offline": "6.12.0",
@@ -37,6 +37,6 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "add-domain": "echo \"petalas.dev\" > ./public/CNAME",
-    "deploy": "gatsby build && npm run add-domain && gh-pages -d public -b deploy-branch -f"
+    "deploy": "npm run clean && npm run build && npm run add-domain && gh-pages -d public -b deploy-branch -f"
   }
 }
