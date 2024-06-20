@@ -14,9 +14,8 @@ const About = (props) => {
       <h4 className={`text-lg ${darker}`}>
         I strive for constant self-improvement, enjoy lifelong learning and knowledge sharing.
       </h4>
-      <h4 className={`text-lg ${darker}`}>Also into travelling all over the world, photography, fitness, finance.</h4>
       <h4 className={`text-lg ${darker}`}>
-        Tech / engineering enthusiast, always looking for new gadgets or projects to play with.
+        I'm mainly interested in technology, engineering, computers, fitness, personal finance, travel, photography.
       </h4>
     </section>
   );
