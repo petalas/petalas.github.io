@@ -6,7 +6,7 @@
   "author": "Nick Petalas <webmasternikos@gmail.com>",
   "dependencies": {
     "autoprefixer": "10.4.20",
-    "gatsby": "5.13.6",
+    "gatsby": "5.13.7",
     "gatsby-plugin-gatsby-cloud": "5.13.1",
     "gatsby-plugin-image": "3.13.1",
     "gatsby-plugin-manifest": "5.13.1",
