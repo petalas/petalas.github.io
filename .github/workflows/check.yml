@@ -1,9 +1,5 @@
 # This workflow runs whenever a PR is opened or updated, or a commit is pushed to master.
 # It checks that the code is formatted properly that it builds successfully.
-
-permissions:
-  contents: read
-
 # This configuration allows maintainers of this repo to create a branch and pull request based on
 # the new branch. Restricting the push trigger to the master branch ensures that the PR only gets
 # built once.
