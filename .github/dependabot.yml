@@ -8,3 +8,8 @@ updates:
     directory: /
     schedule:
       interval: daily
+    groups:
+      all:
+        applies-to: version-updates
+        patterns:
+          - "*"
