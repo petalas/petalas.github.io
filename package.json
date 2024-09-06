@@ -32,8 +32,8 @@
   ],
   "scripts": {
     "build": "gatsby build",
-    "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,css,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
