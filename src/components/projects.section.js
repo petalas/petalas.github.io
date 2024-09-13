@@ -13,7 +13,7 @@ const Projects = (props) => {
           loading="eager"
           src="../images/btc-risk.png"
           quality={95}
-          alt="Profile Picture"
+          alt="BTC Risk Metric project preview"
         />
         <p className="mt-2">Bitcoin risk oscillator, combining multiple metrics.</p>
         <p>Metrics involved so far: </p>
@@ -33,7 +33,13 @@ const Projects = (props) => {
         <a href="https://artgen.xyz/" target="_blank" rel="noreferrer" className="project-title">
           artgen.xyz
         </a>
-        <StaticImage className="w-full" loading="eager" src="../images/artgen.png" quality={95} alt="Profile Picture" />
+        <StaticImage
+          className="w-full"
+          loading="eager"
+          src="../images/artgen.png"
+          quality={95}
+          alt="artgen.xyz project preview"
+        />
         <p className="mt-2">A heuristic vector art generator.</p>
         <p>
           It generates 'abstract art' pieces using genetic algorithms to 'evolve' a set of semi-transparent polygons,

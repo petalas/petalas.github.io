@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "petalas.dev",
   "private": true,
-  "description": "Nick's Portfolio WIP",
+  "description": "Nick's Personal Website",
   "version": "0.1.0",
   "author": "Nick Petalas <webmasternikos@gmail.com>",
   "dependencies": {
@@ -27,6 +27,8 @@
     "prettier": "3.3.3"
   },
   "keywords": [
+    "personal",
+    "petalas.dev",
     "petalas",
     "portfolio"
   ],
