@@ -2,12 +2,12 @@ export const employmentHistory = [
   {
     title: `Senior Software Engineer`,
     name: `Genesis`,
-    timeframe: `Dec 2019 - Present`,
+    timeframe: `Dec 2019 - Oct 2024`,
     description: [
-      `Senior platform engineer, currently working on the latest iteration of our new web platform and low code tooling, also a member of the community success team.`,
+      `Senior Software Engineer, platform team. Most recently worked on the latest iteration of the Genesis Web Platform and low code tooling, was also a member of the community success team.`,
       `Mentoring fellow developers, onboarding new starters, offering Tier 3 support (to internal app devs for external clients).`,
-      `I have also been involved in architecting and building previous iterations of the web platform, facilitated the move from our legacy Angular codebase to a custom web components one using stencil.`,
-      `The latest iteration of our web platform is built on top of microsoft fast, with custom web components + design systems.`,
+      `I have also been involved in architecting and building previous iterations of the web platform, facilitated the move from the legacy Angular codebase to a custom web components one using stencil.`,
+      `The latest iteration of the web platform is built on top of microsoft fast, with custom web components + design systems.`,
     ],
   },
   {
