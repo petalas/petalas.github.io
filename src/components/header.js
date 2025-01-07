@@ -5,6 +5,7 @@ import ExpIcon from "../icons/experience";
 import HomeIcon from "../icons/home";
 import LinksIcon from "../icons/links";
 import ProjectsIcon from "../icons/projects";
+import CVIcon from "../icons/cv";
 
 const Header = ({ bgColor, textColor, hoverBgColor, hoverTextColor }) => {
   const navList = React.useRef(null);
@@ -79,6 +80,12 @@ const Header = ({ bgColor, textColor, hoverBgColor, hoverTextColor }) => {
             <Link className="px-2" to="#links">
               Links
             </Link>
+          </li>
+          <li className={liStyle} onClick={() => toggleNav(true)}>
+            <CVIcon className="nav-icon" />
+            <a className="px-2" href="/Nick_Petalas_CV.pdf" download="Nick_Petalas_CV.pdf">
+              CV (pdf)
+            </a>
           </li>
         </ul>
       </header>

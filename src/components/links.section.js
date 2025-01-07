@@ -4,6 +4,7 @@ import EmailIcon from "../icons/email";
 import GithubIcon from "../icons/github";
 import InstagramIcon from "../icons/instagram";
 import LinkedinIcon from "../icons/linkedin";
+import CVIcon from "../icons/cv";
 
 const Links = (props) => {
   return (
@@ -32,6 +33,16 @@ const Links = (props) => {
 
         <a href="https://www.instagram.com/petalas.dev/" target="_blank" rel="noreferrer" className="link-item">
           <InstagramIcon />
+        </a>
+
+        <a
+          href="/Nick_Petalas_CV.pdf"
+          download="Nick_Petalas_CV.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="link-item"
+        >
+          <CVIcon />
         </a>
       </div>
     </div>
