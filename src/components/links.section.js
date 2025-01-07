@@ -8,9 +8,10 @@ import LinkedinIcon from "../icons/linkedin";
 const Links = (props) => {
   return (
     <div {...props}>
-      <p>My inbox is always open but please keep in mind I am not currently looking for a new role.</p>
+      <p>My inbox is always open and I will be looking for a new role soon!</p>
       <p>
-        Let me know if you have suggestions for improvements or if you'd like to collaborate on any of my side projects.
+        Let me know if you have suggestions for improvements or if you'd like to collaborate on any of my projects (more
+        on github).
       </p>
       <div className="container flex flex-grow mx-auto justify-center items-center text-primary-400 mt-2 link-bar">
         <a href="mailto:webmasternikos@gmail.com" target="_blank" rel="noreferrer" className="link-item">
