@@ -41,7 +41,6 @@ const positions: Position[] = [
         <li>Worked on Genx CLI, low-code tooling, app seeds, custom docusaurus plugins.</li>
         <li>Occasional DevOps work as needed, Infrastructure as Code (AWS Amplify) and github pipelines.</li>
       </ul>
-      <p>Note: Genesis is the leading low-code platform for financial markets-grade applications, with top tier clients like ING, City, Bank of America, BNY, LCH, StoneX, Quantitative Brokers, Octaura, Neptune, Marex and more.</p>
     `,
   },
   {
