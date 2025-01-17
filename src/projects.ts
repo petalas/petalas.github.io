@@ -51,6 +51,7 @@ const projects: Project[] = [
     description: `
       <h3>A heuristic vector art generator.</h3>
       <p>It generates 'abstract art' pieces using genetic algorithms to 'evolve' a set of semi-transparent polygons, attempting to recreate a target image.</p>
+      <p>I'm also working on a multithreaded + SIMD version (Rust).</p>
     `,
   },
   {
