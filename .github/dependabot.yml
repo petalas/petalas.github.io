@@ -8,6 +8,10 @@ updates:
     directory: /
     schedule:
       interval: daily
+    squash_merge_commit_message: "pull-request-title"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
     groups:
       all:
         applies-to: version-updates
