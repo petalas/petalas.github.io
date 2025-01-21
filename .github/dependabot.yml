@@ -8,6 +8,9 @@ updates:
     directory: /
     schedule:
       interval: daily
+    commit-message:
+      prefix: "chore"
+      include: "scope"
     groups:
       all:
         applies-to: version-updates
