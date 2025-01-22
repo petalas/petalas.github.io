@@ -30,7 +30,7 @@ interface Position {
 const positions: Position[] = [
   {
     title: `Senior Software Engineer`,
-    name: `Genesis`,
+    name: `Genesis Global Technology LTD`,
     timeframe: `Dec 2019 - Oct 2024`,
     description: `
       <p>I was a core web platform team member and Technical Lead for the “learn” team.</p>
@@ -45,7 +45,7 @@ const positions: Position[] = [
   },
   {
     title: `Software Engineer`,
-    name: `Elemental Concept`,
+    name: `Elemental Concept LTD`,
     timeframe: `Sep 2018 - Dec 2019`,
     description: `
       <p>During my time in EC I was part of multiple projects and had the opportunity to learn a lot of new technologies and transition from a mostly back-end to a full-stack software engineer.</p>
@@ -61,7 +61,7 @@ const positions: Position[] = [
   },
   {
     title: `Software Engineer`,
-    name: "Enigma Software Solutions",
+    name: "Enigma Software Solutions LTD",
     timeframe: `Feb 2017 - Sep 2018`,
     description: `
       <p>I was part of the core team developing a collection of tools for Enigma’s clients who are in the online betting and gambling business. That collection of tools included both client-facing websites and back-end software (management of clients, traders, bets, fixtures, payment systems, report generation, cashier management system for retail bet shops).</p>
