@@ -1,6 +1,76 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-mocha-crust: #161320;
+  --color-mocha-mantle: #1e1e2e;
+  --color-mocha-base: #181825;
+  --color-mocha-surface0: #313244;
+  --color-mocha-surface1: #45475a;
+  --color-mocha-surface2: #585b70;
+  --color-mocha-overlay0: #6c7086;
+  --color-mocha-overlay1: #7f849c;
+  --color-mocha-overlay2: #9399b2;
+  --color-mocha-subtext0: #a6adc8;
+  --color-mocha-subtext1: #bac2de;
+  --color-mocha-text: #cdd6f4;
+  --color-mocha-lavender: #b4befe;
+  --color-mocha-blue: #89b4fa;
+  --color-mocha-sapphire: #74c7ec;
+  --color-mocha-sky: #89dceb;
+  --color-mocha-teal: #94e2d5;
+  --color-mocha-green: #a6e3a1;
+  --color-mocha-yellow: #f9e2af;
+  --color-mocha-peach: #fab387;
+  --color-mocha-maroon: #eba0ac;
+  --color-mocha-red: #f38ba8;
+  --color-mocha-pink: #f5c2e7;
+  --color-mocha-mauve: #cba6f7;
+
+  --color-latte-crust: #dce0e8;
+  --color-latte-mantle: #e6e9ef;
+  --color-latte-base: #eff1f5;
+  --color-latte-surface0: #f2f5f9;
+  --color-latte-surface1: #f5f7fa;
+  --color-latte-surface2: #f8fafc;
+  --color-latte-overlay0: #e0e6ed;
+  --color-latte-overlay1: #d7dce3;
+  --color-latte-overlay2: #cdd1d8;
+  --color-latte-subtext0: #a5adba;
+  --color-latte-subtext1: #9ca3b0;
+  --color-latte-text: #4c4f69;
+  --color-latte-lavender: #7287fd;
+  --color-latte-blue: #1e66f5;
+  --color-latte-sapphire: #209fb5;
+  --color-latte-sky: #04a5e5;
+  --color-latte-teal: #179299;
+  --color-latte-green: #40a02b;
+  --color-latte-yellow: #df8e1d;
+  --color-latte-peach: #fe640b;
+  --color-latte-maroon: #e64553;
+  --color-latte-red: #d20f39;
+  --color-latte-pink: #ea76cb;
+  --color-latte-mauve: #8839ef;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @font-face {
   font-family: "JetBrains Mono";
@@ -161,10 +231,10 @@ svg {
 }
 
 .link-bar {
-  @apply container flex flex-grow mx-auto justify-center items-center mt-2;
+  @apply container flex grow mx-auto justify-center items-center mt-2;
   @apply text-xs md:text-base
-    before:flex before:flex-grow before:h-[2px] before:border-[1px] before:rounded-full
-    after:flex after:flex-grow after:h-[2px] after:border-[1px] after:rounded-full;
+    before:flex before:grow before:h-[2px] before:border-[1px] before:rounded-full
+    after:flex after:grow after:h-[2px] after:border-[1px] after:rounded-full;
 }
 
 .link-bar,
