@@ -29,6 +29,23 @@ interface Position {
 
 const positions: Position[] = [
   {
+    title: `Founder and Lead Engineer`,
+    name: `DailyGoal.fit`,
+    timeframe: `Feb 2025 - Present`,
+    description: `
+      <p>As Founder and Lead Engineer at dailygoal.fit, I’m building a platform that helps people set, track, and achieve their health and fitness goals with simplicity and consistency. I lead the product vision, engineering architecture, and overall growth strategy — from designing intuitive user experiences to developing a scalable, high-performance application stack. I’m responsible for everything from early product development to customer feedback loops, infrastructure, and long-term roadmap planning. My focus is on creating a product that is not only technically robust but genuinely improves users’ daily lives.</p>
+      <ul class="m-2 p-2 list-disc list-outside">
+        <li>Product vision and roadmap planning.</li>
+        <li>Full-stack development (Next.js / React, Supabase, AWS, Vercel)</li>
+        <li>Integrations with USDA food DB and openfoodfacts (search and barcode scanning).</li>
+        <li>UX/UI design and user research.</li>
+        <li>Scalable architecture design and DevOps.</li>
+        <li>Growth strategy, marketing, and community building.</li>
+        <li>Customer support and product iteration based on user feedback.</li>
+      </ul>
+    `,
+  },
+  {
     title: `Senior Software Engineer`,
     name: `Genesis Global Technology LTD`,
     timeframe: `Dec 2019 - Oct 2024`,
