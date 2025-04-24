@@ -26,6 +26,34 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: `DailyGoal.fit`,
+    link: `https://dailygoal.fit`,
+    img: `images/dailygoal.avif`,
+    description: `
+    <p class="my-2">DailyGoal.fit is a nutrition, health, and fitness tracking app designed to help you build lasting discipline and consistency in your wellness journey.</p>
+    <p class="my-2">Our philosophy centers around slow, sustainable progress that leads to meaningful, long-term improvements in both body and overall quality of life.</p>
+    <p class="my-2">Key features include:</p>
+    <ul class="m-2 p-2 list-disc list-outside">
+      <li>bodyfat % progress calculator</li>
+      <li>Nutrition tracking:</li>
+      <ul class="m-2 p-2 list-disc list-outside">
+        <li>search USDA food DB</li>
+        <li>barcode scanning - openfoodfacts integration</li>
+        <li>create custom foods</li>
+      </ul>
+      <li>personalized and custom daily goals:</li>
+      <ul class="m-2 p-2 list-disc list-outside">
+        <li>weight</li>
+        <li>bodyfat %</li>
+        <li>steps</li>
+        <li>hydration</li>
+        <li>custom goals</li>
+      </ul>
+    </ul>
+
+    `,
+  },
+  {
     name: `BTC Risk Metric`,
     link: `https://github.com/petalas/btc-risk-metric`,
     img: `images/btc-risk.png`,
