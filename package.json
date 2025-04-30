@@ -15,12 +15,12 @@
     "deploy": "npm run build && npm run add-domain && gh-pages -d dist -b deploy-branch -f"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.4",
+    "@tailwindcss/postcss": "^4.1.5",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "tailwindcss": "^4.1.4",
     "typescript": "~5.8.3",
-    "vite": "^6.3.3"
+    "vite": "^6.3.4"
   }
 }
