@@ -1,0 +1,71 @@
+Employment
+
+Founder & Lead Engineer
+dailygoal.fit
+Nov 2024 – Present
+
+Founded and led the development of a health and fitness tracking platform focused on simplicity, consistency, and meaningful user outcomes.
+
+Defined the product vision and oversaw all aspects of engineering, UX design, and long-term roadmap planning.
+
+Designed and implemented a scalable full-stack architecture using Next.js, React 19, Supabase, AWS, and Vercel.
+
+Built core features such as food logging, goal tracking, and barcode scanning with integrations like USDA FoodData Central and OpenFoodFacts.
+
+Designed the database schema to support efficient querying, user-specific goal logic, streak tracking, and historical analytics.
+
+Developed CI/CD workflows and infrastructure automation to enable rapid iteration and high availability.
+
+Led user research, customer support, and iterative product improvements based on feedback.
+
+Drove growth strategy, marketing initiatives, and early-stage community building.
+
+Senior Software Engineer
+Genesis Global Technology LTD
+Dec 2019 – Oct 2024
+
+Core web platform team member and Technical Lead for the “Learn” team.
+
+Architected and built multiple web platform iterations, transitioning from legacy Angular to StencilJS, then to Microsoft FAST with custom web components and design systems.
+
+Mentored developers, onboarded new starters, and provided tier 3 support.
+
+Contributed to Genx CLI, low-code tools, app seeds, and custom Docusaurus plugins.
+
+Occasional DevOps work (AWS Amplify, GitHub pipelines, IaC).
+
+Software Engineer
+Elemental Concept LTD
+Sep 2018 – Dec 2019
+
+Full-stack engineer across multiple projects:
+
+CorResilience: health coaching app with lab and Fitbit integration.
+
+WellteQ: wellness app (Ionic, Cordova, Node.js, Java, MySQL, MongoDB).
+
+Gift & Go: B2B rewards platform (Java 11, Spring Boot, Angular, AWS, Docker, microservices). Led refactoring, microservice extraction, performance optimization, API development for clients incl. Scientific Games.
+
+Go Fast: internal rapid prototyping toolset (Angular 7, NestJS).
+
+Software Engineer
+Enigma Software Solutions LTD
+Feb 2017 – Sep 2018
+
+Built and maintained tools for online betting clients: client portals, payment systems, trader and bet management, reporting, and retail cashier systems.
+
+Focused on Java and SQL back-end development.
+
+Maintained legacy systems (PrimeFaces, Oracle WebLogic).
+
+Software Engineer
+Safemarket LTD
+Dec 2014 – Oct 2016
+
+Designed and developed internal tools and knowledge extraction systems for the Erybo project (Java, SQL, RDF, Jsoup, Selenium, Apache Jena).
+
+Built automated media processing tools (Java, ffmpeg), trivia content generators, and entity parsers.
+
+Developed services and parts of the Quizedia Android app.
+
+Trained and supervised interns in scraping and quiz generation.

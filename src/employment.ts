@@ -15,7 +15,7 @@ const positionTemplate = (position: Position) => {
             <span class="text-latte-red dark:text-mocha-red">${position.timeframe}</span>
         </h2>
         <h3 class="block md:hidden p-2 text-sm text-latte-green dark:text-mocha-green">${position.title}</h3>
-        <ul class="text-xs p-2">${position.description}</ul>
+        <ul class="text-sm md:text-xs p-2">${position.description}</ul>
     </section>
   `;
 };
@@ -29,77 +29,72 @@ interface Position {
 
 const positions: Position[] = [
   {
-    title: `Founder and Lead Engineer`,
-    name: `DailyGoal.fit`,
-    timeframe: `Feb 2025 - Present`,
+    title: `Founder & Lead Engineer`,
+    name: `dailygoal.fit`,
+    timeframe: `Nov 2024 – Present`,
     description: `
-      <p>As Founder and Lead Engineer at dailygoal.fit, I’m building a platform that helps people set, track, and achieve their health and fitness goals with simplicity and consistency. I lead the product vision, engineering architecture, and overall growth strategy — from designing intuitive user experiences to developing a scalable, high-performance application stack. I’m responsible for everything from early product development to customer feedback loops, infrastructure, and long-term roadmap planning. My focus is on creating a product that is not only technically robust but genuinely improves users’ daily lives.</p>
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Product vision and roadmap planning.</li>
-        <li>Full-stack development (Next.js / React, Supabase, AWS, Vercel)</li>
-        <li>Integrations with USDA food DB and openfoodfacts (search and barcode scanning).</li>
-        <li>UX/UI design and user research.</li>
-        <li>Scalable architecture design and DevOps.</li>
-        <li>Growth strategy, marketing, and community building.</li>
-        <li>Customer support and product iteration based on user feedback.</li>
+        <li>Founded and led development of a <strong>health and fitness tracking platform</strong> focused on simplicity, consistency, and meaningful user outcomes.</li>
+        <li>Defined product vision and oversaw all aspects of engineering, UX design, and long-term roadmap planning.</li>
+        <li>Designed and implemented scalable full-stack architecture using <code>Next.js</code>, <code>React 19</code>, <code>Supabase</code>, <code>AWS</code>, and <code>Vercel</code>.</li>
+        <li>Built core features including food logging, goal tracking, and barcode scanning with integrations like <code>USDA FoodData Central</code> and <code>OpenFoodFacts</code>.</li>
+        <li>Designed database schema to support efficient querying, user-specific goal logic, streak tracking, and historical analytics.</li>
+        <li>Developed <strong>CI/CD workflows</strong> and infrastructure automation to enable rapid iteration and high availability.</li>
+        <li>Led user research, customer support, and iterative product improvements based on feedback.</li>
+        <li>Drove growth strategy, marketing initiatives, and early-stage community building.</li>
       </ul>
     `,
   },
   {
     title: `Senior Software Engineer`,
     name: `Genesis Global Technology LTD`,
-    timeframe: `Dec 2019 - Oct 2024`,
+    timeframe: `Dec 2019 – Oct 2024`,
     description: `
-      <p>I was a core web platform team member and Technical Lead for the “learn” team.</p>
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Involved in architecting and building multiple iterations of the web platform.</li>
-        <li>Facilitated the move from the legacy Angular codebase to one using stenciljs and subsequently the latest iteration of the web platform which is built on top of Microsoft FAST with custom web components and design systems.</li>
-        <li>Mentored fellow developers, onboarded new starters, offered tier 3 support.</li>
-        <li>Worked on Genx CLI, low-code tooling, app seeds, custom docusaurus plugins.</li>
-        <li>Occasional DevOps work as needed, Infrastructure as Code (AWS Amplify) and github pipelines.</li>
+        <li>Core web platform team member and <strong>Technical Lead</strong> for the "Learn" team.</li>
+        <li>Architected and built multiple platform iterations, transitioning from legacy <code>Angular</code> to <code>StencilJS</code>, then to <code>Microsoft FAST</code> with custom web components and design systems.</li>
+        <li>Mentored developers, onboarded new starters, and provided tier 3 support.</li>
+        <li>Contributed to <code>Genx CLI</code>, low-code tools, app seeds, and custom <code>Docusaurus</code> plugins.</li>
+        <li>Performed DevOps work including <code>AWS Amplify</code>, <code>GitHub pipelines</code>, and Infrastructure as Code.</li>
       </ul>
     `,
   },
   {
     title: `Software Engineer`,
     name: `Elemental Concept LTD`,
-    timeframe: `Sep 2018 - Dec 2019`,
+    timeframe: `Sep 2018 – Dec 2019`,
     description: `
-      <p>During my time in EC I was part of multiple projects and had the opportunity to learn a lot of new technologies and transition from a mostly back-end to a full-stack software engineer.</p>
       <ul class="m-2 p-2 list-disc list-outside">
-        <li><strong><b>CorResilience:</b></strong> personalized health coaching mobile app with blood test labs and Fitbit integration.</li>
-        <li><strong><b>WellteQ:</b></strong> health focused mobile app, Fitbit and Google Health integration. (ionic, cordova, NodeJS and Java back-ends, MySQL and MongoDB)</li>
-        <li><strong><b>Gift & Go:</b></strong> B2B gifting and loyalty / rewards platform, integration with multiple Amazon APIs, custom product catalogs and fulfillment through Amazon FBA, 10+ microservices, dockerized, on AWS (MySQL, Java 11, Spring Boot, Eureka, Angular).</li>
-        <li><strong><b>Go Fast:</b></strong> internal project focusing on rapid prototyping, skeleton apps, reusable components (Angular 7, NestJS)</li>
+        <li>Full-stack engineer across multiple high-impact projects.</li>
+        <li><strong>CorResilience:</strong> health coaching app with lab and Fitbit integration.</li>
+        <li><strong>WellteQ:</strong> wellness app (<code>Ionic</code>, <code>Cordova</code>, <code>Node.js</code>, <code>Java</code>, <code>MySQL</code>, <code>MongoDB</code>).</li>
+        <li><strong>Gift & Go:</strong> B2B rewards platform (<code>Java 11</code>, <code>Spring Boot</code>, <code>Angular</code>, <code>AWS</code>, <code>Docker</code>, microservices). Led refactoring, microservice extraction, performance optimization, API development for clients incl. Scientific Games.</li>
+        <li><strong>Go Fast:</strong> internal rapid prototyping toolset (<code>Angular 7</code>, <code>NestJS</code>).</li>
       </ul>
-      <p>I was involved with Gift & Go the most, I helped refactor a lot of the legacy code, split monolithic systems into appropriate microservices, optimize queries and performance, dockerize services and automate the deployment pipeline.</p>
-      <p>Also developed custom APIs for third party integration on a client-by-client basis.</p>
     `,
   },
   {
     title: `Software Engineer`,
-    name: "Enigma Software Solutions LTD",
-    timeframe: `Feb 2017 - Sep 2018`,
+    name: `Enigma Software Solutions LTD`,
+    timeframe: `Feb 2017 – Sep 2018`,
     description: `
-      <p>I was part of the core team developing a collection of tools for Enigma’s clients who are in the online betting and gambling business. That collection of tools included both client-facing websites and back-end software (management of clients, traders, bets, fixtures, payment systems, report generation, cashier management system for retail bet shops).</p>
-      <p>I specialized in Java and SQL, mainly developed services and optimized back-end code.</p>
-      <p>I was also involved in the maintenance of some legacy systems (PrimeFaces websites, Oracle WebLogic servers).</p>
+      <ul class="m-2 p-2 list-disc list-outside">
+        <li>Built and maintained tools for online betting clients: client portals, payment systems, trader and bet management, reporting, and retail cashier systems.</li>
+        <li>Focused on <code>Java</code> and <code>SQL</code> back-end development.</li>
+        <li>Maintained legacy systems (<code>PrimeFaces</code>, <code>Oracle WebLogic</code>).</li>
+      </ul>
     `,
   },
   {
     title: `Software Engineer`,
     name: `Safemarket LTD`,
-    timeframe: "Oct 2014 - Oct 2016",
+    timeframe: `Dec 2014 – Oct 2016`,
     description: `
-      <p>I actively participated in the architectural design of internal tools for the Erybo project and managed multiple databases.</p>
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Developed specialized data mining and knowledge extraction tools that automatically update Erybo’s knowledge base (SQL, RDF databases) mostly using Java (Jsoup, Selenium, HikariCP, Apache Jena).</li>
-        <li>Created content-generating tools (automatic generation of trivia questions for Erybo’s quiz app).</li>
-        <li>Participated in the development of the control panel used for handling users, questions and quizzes.</li>
-        <li>Created automatic audio and video manipulation tools for cropping, transcoding, audio level adjustment, segmentation, detection of silent/dark audio/video segments. (Java, ffmpeg)</li>
-        <li>Created services for on-demand parsing of information about entities, media extraction and storage, and other utilities. (Java, Netty)</li>
-        <li>Developed part of the android version of Erybo's trivia app Quizedia.</li>
-        <li>Supervised and trained interns mostly in web scrapping and quiz content generation.</li>
+        <li>Designed and developed internal tools and knowledge extraction systems for the Erybo project (<code>Java</code>, <code>SQL</code>, <code>RDF</code>, <code>Jsoup</code>, <code>Selenium</code>, <code>Apache Jena</code>).</li>
+        <li>Built automated media processing tools (<code>Java</code>, <code>ffmpeg</code>), trivia content generators, and entity parsers.</li>
+        <li>Developed services and parts of the <strong>Quizedia Android app</strong>.</li>
+        <li>Trained and supervised interns in scraping and quiz generation.</li>
       </ul>
     `,
   },
