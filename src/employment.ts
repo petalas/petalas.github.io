@@ -30,8 +30,8 @@ interface Position {
 const positions: Position[] = [
   {
     title: `Founder & Lead Engineer`,
-    name: `dailygoal.fit`,
-    timeframe: `Nov 2024 – Present`,
+    name: `DailyGoal.fit`,
+    timeframe: `Feb 2025 – Present`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
         <li>Founded and led development of a <strong>health and fitness tracking platform</strong> focused on simplicity, consistency, and meaningful user outcomes.</li>

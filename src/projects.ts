@@ -27,7 +27,7 @@ interface Project {
 const projects: Project[] = [
   {
     name: `DailyGoal.fit`,
-    link: `https://dailygoal.fit`,
+    link: `https://www.dailygoal.fit`,
     img: `images/dailygoal.avif`,
     description: `
     <p class="my-2">DailyGoal.fit is a nutrition, health, and fitness tracking app designed to help you build lasting discipline and consistency in your wellness journey.</p>
