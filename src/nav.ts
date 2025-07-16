@@ -59,13 +59,34 @@ export function setupNav(element: HTMLElement) {
     listItems?.[i]?.addEventListener("click", () => hideNav());
   }
 
-  const themeButton = document.querySelector("#theme-button")! as HTMLButtonElement;
-  themeButton.onclick = () => {
-    document.body.classList.toggle("dark");
+  // Initialize theme from localStorage
+  const savedTheme = localStorage.getItem("darkMode");
+  if (savedTheme === "true") {
+    document.body.classList.add("dark");
+  } else if (savedTheme === "false") {
+    document.body.classList.remove("dark");
+  }
+
+  const themeButton = document.querySelector("#theme-button") as HTMLButtonElement;
+  if (themeButton) {
+    // Set initial icon based on current theme
     if (document.body.classList.contains("dark")) {
       themeButton.innerHTML = SunIcon;
     } else {
       themeButton.innerHTML = MoonIcon;
     }
-  };
+
+    themeButton.onclick = () => {
+      document.body.classList.toggle("dark");
+      const isDark = document.body.classList.contains("dark");
+
+      if (isDark) {
+        themeButton.innerHTML = SunIcon;
+        localStorage.setItem("darkMode", "true");
+      } else {
+        themeButton.innerHTML = MoonIcon;
+        localStorage.setItem("darkMode", "false");
+      }
+    };
+  }
 }
