@@ -33,13 +33,39 @@ const generateWorkPositionSchema = () => {
   `;
 };
 
+const parseDate = (monthYear: string): string => {
+  const monthMap: { [key: string]: number } = {
+    Jan: 0,
+    Feb: 1,
+    Mar: 2,
+    Apr: 3,
+    May: 4,
+    Jun: 5,
+    Jul: 6,
+    Aug: 7,
+    Sep: 8,
+    Oct: 9,
+    Nov: 10,
+    Dec: 11,
+  };
+
+  const match = monthYear.match(/^(\w+)\s+(\d{4})$/);
+  if (!match) return "";
+
+  const [, monthStr, yearStr] = match;
+  const month = monthMap[monthStr];
+  const year = parseInt(yearStr, 10);
+
+  if (month === undefined || isNaN(year)) return "";
+
+  const date = new Date(year, month, 1);
+  return date.toISOString().split("T")[0];
+};
+
 const parseStartDate = (timeframe: string): string => {
   const match = timeframe.match(/^(\w+\s+\d{4})/);
   if (!match) return "";
-
-  const monthYear = match[1];
-  const date = new Date(monthYear);
-  return date.toISOString().split("T")[0];
+  return parseDate(match[1]);
 };
 
 const parseEndDate = (timeframe: string): string => {
@@ -47,10 +73,7 @@ const parseEndDate = (timeframe: string): string => {
 
   const match = timeframe.match(/–\s*(\w+\s+\d{4})$/);
   if (!match) return "";
-
-  const monthYear = match[1];
-  const date = new Date(monthYear);
-  return date.toISOString().split("T")[0];
+  return parseDate(match[1]);
 };
 
 const positionTemplate = (position: Position) => {
