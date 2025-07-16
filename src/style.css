@@ -202,10 +202,12 @@ a:hover {
 
 .contact-buttons {
   @apply flex flex-col sm:flex-row gap-4 justify-center items-center;
+  @apply max-w-sm sm:max-w-none mx-auto;
 }
 
 .contact-cta {
-  @apply inline-flex items-center gap-3 px-4 py-3;
+  @apply flex items-center justify-center gap-3 px-4 py-3;
+  @apply w-full sm:w-auto;
   @apply bg-transparent;
   @apply text-latte-text dark:text-mocha-text;
   @apply rounded-lg font-medium;
@@ -240,10 +242,10 @@ a:hover {
   @apply bg-latte-surface0 dark:bg-mocha-surface0;
   @apply border-2 border-latte-surface1 dark:border-mocha-surface1;
   @apply rounded-full;
-  @apply hover:border-latte-blue dark:hover:border-mocha-blue;
+  @apply hover:border-latte-peach dark:hover:border-mocha-peach;
   @apply hover:bg-latte-surface1 dark:hover:bg-mocha-surface1;
   @apply text-latte-text dark:text-mocha-text;
-  @apply hover:text-latte-blue dark:hover:text-mocha-blue;
+  @apply hover:text-latte-peach dark:hover:text-mocha-peach;
   @apply transition-all duration-200;
   @apply transform hover:scale-110;
   @apply no-underline;
