@@ -123,7 +123,7 @@ const positions: Position[] = [
     timeframe: `Dec 2019 – Oct 2024`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Core web platform team member and <strong>Technical Lead</strong> for the "Learn" team.</li>
+        <li>Core <strong>web platform</strong> team member and <strong>Technical Lead</strong> for the "Learn" team.</li>
         <li>Architected and built multiple platform iterations, transitioning from legacy <code>Angular</code> to <code>StencilJS</code>, then to <code>Microsoft FAST</code> with custom web components and design systems.</li>
         <li>Mentored developers, onboarded new starters, and provided tier 3 support.</li>
         <li>Contributed to <code>Genx CLI</code>, low-code tools, app seeds, and custom <code>Docusaurus</code> plugins.</li>

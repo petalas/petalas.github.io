@@ -59,29 +59,38 @@ const projects: Project[] = [
     link: `https://www.dailygoal.fit`,
     img: `images/dailygoal.avif`,
     description: `
-    <p class="my-2">DailyGoal.fit is a nutrition, health, and fitness tracking app designed to help you build lasting discipline and consistency in your wellness journey.</p>
-    <p class="my-2">Our philosophy centers around slow, sustainable progress that leads to meaningful, long-term improvements in both body and overall quality of life.</p>
-    <p class="my-2">Key features include:</p>
-    <ul class="m-2 p-2 list-disc list-outside">
-      <li>bodyfat % progress calculator</li>
-      <li>Nutrition tracking:
-        <ul class="m-2 p-2 list-disc list-outside">
-          <li>search USDA food DB</li>
-          <li>barcode scanning - openfoodfacts integration</li>
-          <li>create custom foods</li>
+    <p class="my-2 font-semibold">A nutrition, health, and fitness tracking app designed to build lasting discipline and consistency in wellness journeys.</p>
+    
+    <p class="my-2">DailyGoal.fit's philosophy centers on slow, sustainable progress that leads to meaningful, long-term improvements in both body composition and overall quality of life. The platform enables users to monitor daily food intake, track macronutrients, set customizable goals, and measure progress through various metrics. Its advanced body composition calculator estimates timelines for reaching ideal body fat percentages based on current stats and activity levels.</p>
+    
+    <h4 class="font-semibold mt-3 mb-1">Core Features:</h4>
+    <ul class="m-2 p-2 list-disc list-outside space-y-1">
+      <li><strong>Intelligent Nutrition Tracking</strong>
+        <ul class="m-2 p-2 list-disc list-outside text-sm">
+          <li>USDA food database with 500,000+ verified entries</li>
+          <li>Barcode scanning via OpenFoodFacts integration</li>
+          <li>Custom food and recipe builder</li>
+          <li>Macronutrient analysis</li>
         </ul>
       </li>
-      <li>personalized and custom daily goals:
-        <ul class="m-2 p-2 list-disc list-outside">
-          <li>weight</li>
-          <li>bodyfat %</li>
-          <li>steps</li>
-          <li>hydration</li>
-          <li>custom goals</li>
+      <li><strong>Advanced Body Composition</strong>
+        <ul class="m-2 p-2 list-disc list-outside text-sm">
+          <li>Body fat percentage calculator and trends</li>
+          <li>Lean mass tracking</li>
+        </ul>
+      </li>
+      <li><strong>Personalized Goal System</strong>
+        <ul class="m-2 p-2 list-disc list-outside text-sm">
+          <li>Weight management (loss/gain/maintenance)</li>
+          <li>Daily step targets with activity tracking</li>
+          <li>Hydration reminders and logging</li>
+          <li>Custom wellness goals (sleep, meditation, etc.)</li>
         </ul>
       </li>
     </ul>
-
+    
+    <h4 class="font-semibold mt-3 mb-1">Tech Stack:</h4>
+    <p class="text-sm">Built with React, TypeScript, Supabase, and Stripe. Features real-time sync and a responsive PWA design for seamless mobile and desktop experiences.</p>
     `,
   },
   {
