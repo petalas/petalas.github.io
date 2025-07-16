@@ -19,7 +19,7 @@ export function setupNav(element: HTMLElement) {
       </ul>
       <div class="mobile-controls">
         <div class="theme-toggle-container">
-          <button id="theme-button" class="theme-toggle-btn">${SunIcon}</button>
+          <button id="theme-button" class="theme-toggle-btn" aria-label="Toggle dark mode">${SunIcon}</button>
         </div>
         <div id="nav-toggle" class="nav-toggle-button">${DownIcon}</div>
       </div>

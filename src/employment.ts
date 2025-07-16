@@ -3,20 +3,69 @@ export function setupExperience(element: HTMLElement) {
 
   element.innerHTML = `
     ${positions.map(positionTemplate).join("")}
+    ${generateWorkPositionSchema()}
   `;
 }
 
+const generateWorkPositionSchema = () => {
+  const workPositions = positions.map((position) => ({
+    "@type": "WorkPosition",
+    "name": position.title,
+    "employer": {
+      "@type": "Organization",
+      "name": position.name,
+    },
+    "employmentType": "FULL_TIME",
+    "startDate": parseStartDate(position.timeframe),
+    "endDate": parseEndDate(position.timeframe),
+    "description": position.description.replace(/<[^>]*>/g, "").trim(),
+  }));
+
+  return `
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nick Petalas",
+      "hasOccupation": ${JSON.stringify(workPositions)}
+    }
+    </script>
+  `;
+};
+
+const parseStartDate = (timeframe: string): string => {
+  const match = timeframe.match(/^(\w+\s+\d{4})/);
+  if (!match) return "";
+
+  const monthYear = match[1];
+  const date = new Date(monthYear);
+  return date.toISOString().split("T")[0];
+};
+
+const parseEndDate = (timeframe: string): string => {
+  if (timeframe.includes("Present")) return "";
+
+  const match = timeframe.match(/–\s*(\w+\s+\d{4})$/);
+  if (!match) return "";
+
+  const monthYear = match[1];
+  const date = new Date(monthYear);
+  return date.toISOString().split("T")[0];
+};
+
 const positionTemplate = (position: Position) => {
   return `
-    <section class="position">
-        <h2 class="p-2 flex justify-between bg-latte-crust dark:bg-mocha-crust">
-            <span class="hidden md:block text-latte-green dark:text-mocha-green">${position.title}</span>
-            <span class="md:flex-1 md:text-center text-latte-peach dark:text-mocha-peach">${position.name}</span>
-            <span class="text-latte-red dark:text-mocha-red">${position.timeframe}</span>
-        </h2>
-        <h3 class="block md:hidden p-2 text-sm text-latte-green dark:text-mocha-green">${position.title}</h3>
-        <ul class="text-sm md:text-xs p-2">${position.description}</ul>
-    </section>
+    <article class="position" itemscope itemtype="https://schema.org/WorkExperience">
+        <header class="p-2 flex justify-between bg-latte-crust dark:bg-mocha-crust">
+            <h3 class="hidden md:block text-latte-green dark:text-mocha-green" itemprop="name">${position.title}</h3>
+            <span class="md:flex-1 md:text-center text-latte-peach dark:text-mocha-peach" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+              <span itemprop="name">${position.name}</span>
+            </span>
+            <time class="text-latte-red dark:text-mocha-red" itemprop="startDate endDate">${position.timeframe}</time>
+        </header>
+        <h3 class="block md:hidden p-2 text-sm text-latte-green dark:text-mocha-green" itemprop="name">${position.title}</h3>
+        <div class="text-sm md:text-xs p-2" itemprop="description">${position.description}</div>
+    </article>
   `;
 };
 

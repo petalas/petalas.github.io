@@ -2,8 +2,8 @@ export function setupAbout(element: HTMLElement) {
   if (!element) return;
 
   element.innerHTML = `
-    <img src="images/nick3.jpeg" alt="Nick Petalas" class="w-full aspect-square rounded-lg shadow-lg" />
-    <section class="col-span-1 lg:col-span-2 xl:col-span-3">${introText()}</section>
+    <img src="images/nick3.jpeg" alt="Nick Petalas, Senior Software Engineer and Founder of DailyGoal.fit" class="w-full aspect-square rounded-lg shadow-lg" itemprop="image" />
+    <section class="col-span-1 lg:col-span-2 xl:col-span-3" itemscope itemtype="https://schema.org/Person">${introText()}</section>
   `;
 }
 
@@ -11,10 +11,10 @@ const introText = () => {
   return `
     <div class="p-4 md:p-6 flex flex-col gap-4">
       <div>
-        <h2 class="text-3xl md:text-4xl font-bold mb-2">Hi, I'm Nick</h2>
-        <h3 class="text-xl md:text-2xl text-latte-subtext0 dark:text-mocha-subtext0">
+        <h1 id="about-heading" class="text-3xl md:text-4xl font-bold mb-2" itemprop="name">Hi, I'm Nick</h1>
+        <h2 class="text-xl md:text-2xl text-latte-subtext0 dark:text-mocha-subtext0" itemprop="jobTitle">
           Senior Software Engineer
-        </h3>
+        </h2>
       </div>
       
       <div class="space-y-3 text-base md:text-lg">
@@ -34,13 +34,14 @@ const introText = () => {
           <p class="text-sm md:text-base text-latte-subtext1 dark:text-mocha-subtext1 mb-2">
             Interests & passions:
           </p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm">Technology</span>
-            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm">Engineering</span>
-            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm">Fitness</span>
-            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm">Personal Finance</span>
-            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm">Travel</span>
-            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm">Photography</span>
+          <div class="flex flex-wrap gap-2" role="list" aria-label="Personal interests">
+            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm" role="listitem">Technology</span>
+            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm" role="listitem">Engineering</span>
+            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm" role="listitem">Fitness</span>
+            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm" role="listitem">Personal Finance</span>
+            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm" role="listitem">3D Printing</span>
+            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm" role="listitem">Travel</span>
+            <span class="px-3 py-1 bg-latte-surface0 dark:bg-mocha-surface0 rounded-full text-sm" role="listitem">Photography</span>
           </div>
         </div>
       </div>

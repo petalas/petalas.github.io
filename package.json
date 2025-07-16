@@ -7,10 +7,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run sitemap && tsc && vite build",
     "preview": "vite preview",
     "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,css,json,md}\"",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json,md}\"",
+    "sitemap": "node scripts/generate-sitemap.js",
     "add-domain": "echo \"petalas.dev\" > ./dist/CNAME",
     "deploy": "npm run build && npm run add-domain && gh-pages -d dist -b deploy-branch -f"
   },

@@ -3,25 +3,238 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/images/np.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>petalas.dev</title>
     <meta name="description" content="Nick Petalas' personal website and development portfolio." />
-    <meta name="keywords" content="Nick Petalas, Personal Website, Dev Portfolio, Resume, CV"/>
+    <meta name="keywords" content="Nick Petalas, Personal Website, Dev Portfolio, Resume, CV, Software Engineer, Full-stack Developer, TypeScript, React, Node.js, AWS"/>
     <meta name="author" content="Nick Petalas" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="language" content="English" />
+    <meta name="theme-color" content="#89b4fa" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self';" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="canonical" href="https://petalas.dev" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://github.com" />
+    <link rel="preconnect" href="https://www.dailygoal.fit" />
+    <link rel="preconnect" href="https://artgen.xyz" />
+    <link rel="preconnect" href="https://www.linkedin.com" />
+    <link rel="preconnect" href="https://www.instagram.com" />
+    
+    <!-- Performance optimization -->
+    <link rel="dns-prefetch" href="//github.com" />
+    <link rel="dns-prefetch" href="//www.dailygoal.fit" />
+    <link rel="dns-prefetch" href="//artgen.xyz" />
+    <link rel="dns-prefetch" href="//www.linkedin.com" />
+    <link rel="dns-prefetch" href="//www.instagram.com" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/images/nick3.jpeg" as="image" type="image/jpeg" />
+    <link rel="preload" href="/src/main.ts" as="script" />
 
-    <!-- opengraph tags -->
-    <meta property="og:title" content="petalas.dev" />
-    <meta property="og:description" content="Nick Petalas' personal website and development portfolio." />
+    <!-- Enhanced Open Graph tags -->
+    <meta property="og:title" content="Nick Petalas - Senior Software Engineer & Founder" />
+    <meta property="og:description" content="Nick Petalas' personal website and development portfolio. Senior Software Engineer based in London, Founder of DailyGoal.fit" />
     <meta property="og:image" content="https://petalas.dev/images/nick3.jpeg" />
+    <meta property="og:image:alt" content="Nick Petalas, Senior Software Engineer" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
     <meta property="og:url" content="https://petalas.dev" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="petalas.dev" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="profile:first_name" content="Nick" />
+    <meta property="profile:last_name" content="Petalas" />
 
-    <!-- twitter card -->
+    <!-- Enhanced Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="petalas.dev" />
-    <meta name="twitter:description" content="Nick Petalas' personal website and development portfolio." />
+    <meta name="twitter:site" content="@petalas_dev" />
+    <meta name="twitter:creator" content="@petalas_dev" />
+    <meta name="twitter:title" content="Nick Petalas - Senior Software Engineer & Founder" />
+    <meta name="twitter:description" content="Nick Petalas' personal website and development portfolio. Senior Software Engineer based in London, Founder of DailyGoal.fit" />
     <meta name="twitter:image" content="https://petalas.dev/images/nick3.jpeg" />
+    <meta name="twitter:image:alt" content="Nick Petalas, Senior Software Engineer" />
     <meta name="twitter:url" content="https://petalas.dev" />
+    
+    <!-- Enhanced Schema.org JSON-LD for Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nick Petalas",
+      "givenName": "Nick",
+      "familyName": "Petalas",
+      "url": "https://petalas.dev",
+      "mainEntityOfPage": "https://petalas.dev",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://petalas.dev/images/nick3.jpeg",
+        "width": "400",
+        "height": "400"
+      },
+      "jobTitle": ["Senior Software Engineer", "Founder"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "DailyGoal.fit",
+        "url": "https://www.dailygoal.fit"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressRegion": "England",
+        "addressCountry": "GB"
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "Greece"
+      },
+      "email": "webmasternikos@gmail.com",
+      "sameAs": [
+        "https://github.com/petalas",
+        "https://www.linkedin.com/in/petalas",
+        "https://www.instagram.com/petalas.dev",
+        "https://artgen.xyz"
+      ],
+      "knowsAbout": [
+        "Software Engineering",
+        "Web Development",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "AWS",
+        "Full-stack Development",
+        "JavaScript",
+        "Python",
+        "Java",
+        "DevOps",
+        "Database Design",
+        "API Development"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Software Engineer",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "London"
+        },
+        "skills": [
+          "TypeScript",
+          "React",
+          "Node.js",
+          "AWS",
+          "Full-stack Development",
+          "Software Architecture",
+          "DevOps"
+        ]
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "University"
+        }
+      ],
+      "seeks": {
+        "@type": "Demand",
+        "name": "Software Engineering Opportunities"
+      }
+    }
+    </script>
+
+    <!-- Breadcrumb Navigation JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://petalas.dev"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://petalas.dev#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Experience",
+          "item": "https://petalas.dev#experience"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Projects",
+          "item": "https://petalas.dev#projects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contact",
+          "item": "https://petalas.dev#contact"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Website JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Nick Petalas - Software Engineer",
+      "url": "https://petalas.dev",
+      "description": "Nick Petalas' personal website and development portfolio",
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Person",
+        "name": "Nick Petalas"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://petalas.dev#{search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://petalas.dev/#organization",
+      "name": "Nick Petalas",
+      "url": "https://petalas.dev",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://petalas.dev/images/nick3.jpeg"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Nick Petalas"
+      },
+      "foundingDate": "2025",
+      "description": "Personal brand and portfolio of Nick Petalas, Senior Software Engineer",
+      "sameAs": [
+        "https://github.com/petalas",
+        "https://www.linkedin.com/in/petalas",
+        "https://www.instagram.com/petalas.dev"
+      ]
+    }
+    </script>
   </head>
   <body class="dark">
     <div id="app"></div>

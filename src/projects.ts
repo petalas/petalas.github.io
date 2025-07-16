@@ -3,17 +3,46 @@ export function setupProjects(element: HTMLElement) {
 
   element.innerHTML = `
     ${projects.map(projectTemplate).join("")}
+    ${generateProjectSchema()}
   `;
 }
 
-const projectTemplate = (project: Project): string => {
-  const title = project.link ? `<a href="${project.link}" target="_blank">${project.name}</a>` : project.name;
+const generateProjectSchema = () => {
+  const softwareProjects = projects.map((project) => ({
+    "@type": "SoftwareApplication",
+    "name": project.name,
+    "url": project.link || "",
+    "image": project.img ? `https://petalas.dev/${project.img}` : "",
+    "description": project.description.replace(/<[^>]*>/g, "").trim(),
+    "author": {
+      "@type": "Person",
+      "name": "Nick Petalas",
+    },
+    "applicationCategory": "WebApplication",
+  }));
+
   return `
-    <div class="project">
-        <h2 class="p-2 bg-latte-crust dark:bg-mocha-crust">${title}</h2>
-        <img src="${project.img}" alt="${project.name}" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nick Petalas",
+      "hasCreated": ${JSON.stringify(softwareProjects)}
+    }
+    </script>
+  `;
+};
+
+const projectTemplate = (project: Project): string => {
+  const title = project.link
+    ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.name}</a>`
+    : project.name;
+  return `
+    <article class="project">
+        <h3 class="p-2 bg-latte-crust dark:bg-mocha-crust">${title}</h3>
+        <img src="${project.img}" alt="${project.name} project screenshot showing main interface" loading="lazy" />
         <div class="text-sm p-2">${project.description}</div>
-    </div>
+    </article>
   `;
 };
 
@@ -35,20 +64,22 @@ const projects: Project[] = [
     <p class="my-2">Key features include:</p>
     <ul class="m-2 p-2 list-disc list-outside">
       <li>bodyfat % progress calculator</li>
-      <li>Nutrition tracking:</li>
-      <ul class="m-2 p-2 list-disc list-outside">
-        <li>search USDA food DB</li>
-        <li>barcode scanning - openfoodfacts integration</li>
-        <li>create custom foods</li>
-      </ul>
-      <li>personalized and custom daily goals:</li>
-      <ul class="m-2 p-2 list-disc list-outside">
-        <li>weight</li>
-        <li>bodyfat %</li>
-        <li>steps</li>
-        <li>hydration</li>
-        <li>custom goals</li>
-      </ul>
+      <li>Nutrition tracking:
+        <ul class="m-2 p-2 list-disc list-outside">
+          <li>search USDA food DB</li>
+          <li>barcode scanning - openfoodfacts integration</li>
+          <li>create custom foods</li>
+        </ul>
+      </li>
+      <li>personalized and custom daily goals:
+        <ul class="m-2 p-2 list-disc list-outside">
+          <li>weight</li>
+          <li>bodyfat %</li>
+          <li>steps</li>
+          <li>hydration</li>
+          <li>custom goals</li>
+        </ul>
+      </li>
     </ul>
 
     `,
