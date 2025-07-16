@@ -8,4 +8,6 @@ export * from "./home.ts";
 export * from "./instagram.ts";
 export * from "./linkedin.ts";
 export * from "./links.ts";
+export * from "./moon.ts";
 export * from "./projects.ts";
+export * from "./sun.ts";
