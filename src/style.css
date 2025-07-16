@@ -168,7 +168,89 @@ a:hover {
 }
 
 #links {
-  @apply bg-latte-mantle dark:bg-mocha-mantle p-2 rounded-xl;
+  @apply bg-latte-mantle dark:bg-mocha-mantle;
+  @apply border-latte-mantle dark:border-mocha-mantle;
+  @apply border-2 rounded-xl;
+  @apply w-full overflow-hidden;
+  @apply p-6;
+}
+
+/* Contact section styling */
+.contact-content {
+  @apply space-y-8;
+}
+
+.contact-header {
+  @apply text-center space-y-2;
+}
+
+.contact-header h2 {
+  @apply text-2xl font-bold text-latte-text dark:text-mocha-text;
+}
+
+.contact-tagline {
+  @apply text-latte-subtext1 dark:text-mocha-subtext1 text-sm;
+}
+
+.contact-main {
+  @apply space-y-4 text-center;
+}
+
+.contact-main p {
+  @apply text-latte-subtext1 dark:text-mocha-subtext1 text-sm leading-relaxed max-w-2xl mx-auto;
+}
+
+.contact-buttons {
+  @apply flex flex-col sm:flex-row gap-4 justify-center items-center;
+}
+
+.contact-cta {
+  @apply inline-flex items-center gap-3 px-4 py-3;
+  @apply bg-transparent;
+  @apply text-latte-text dark:text-mocha-text;
+  @apply rounded-lg font-medium;
+  @apply hover:text-latte-peach dark:hover:text-mocha-peach;
+  @apply hover:bg-latte-surface0 dark:hover:bg-mocha-surface0;
+  @apply transition-all duration-200;
+  @apply shadow-sm hover:shadow-md;
+  @apply transform hover:scale-105;
+  @apply no-underline;
+  @apply border-2 border-latte-surface0 dark:border-mocha-surface0;
+  @apply hover:border-latte-peach dark:hover:border-mocha-peach;
+}
+
+.contact-cta svg {
+  @apply w-5 h-5 fill-current;
+}
+
+.social-section {
+  @apply space-y-4 text-center;
+}
+
+.social-section h3 {
+  @apply text-lg font-semibold text-latte-text dark:text-mocha-text;
+}
+
+.social-links {
+  @apply flex justify-center gap-4;
+}
+
+.social-link {
+  @apply w-12 h-12 flex items-center justify-center;
+  @apply bg-latte-surface0 dark:bg-mocha-surface0;
+  @apply border-2 border-latte-surface1 dark:border-mocha-surface1;
+  @apply rounded-full;
+  @apply hover:border-latte-blue dark:hover:border-mocha-blue;
+  @apply hover:bg-latte-surface1 dark:hover:bg-mocha-surface1;
+  @apply text-latte-text dark:text-mocha-text;
+  @apply hover:text-latte-blue dark:hover:text-mocha-blue;
+  @apply transition-all duration-200;
+  @apply transform hover:scale-110;
+  @apply no-underline;
+}
+
+.social-link svg {
+  @apply w-6 h-6 fill-current;
 }
 
 #footer,

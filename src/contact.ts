@@ -1,39 +1,48 @@
-import { ArtgenIcon, EmailIcon, CVIcon, InstagramIcon, LinkedinIcon, GithubIcon } from "./icons";
+import { ArtgenIcon, CVIcon, EmailIcon, GithubIcon, InstagramIcon, LinkedinIcon } from "./icons";
 
 export function setupLinks(element: HTMLElement) {
   if (!element) return;
 
   element.innerHTML = `
-    <p>My inbox is always open and I will be looking for a new role soon!</p>
-    <p>
-      Let me know if you have suggestions for improvements or if you'd like to collaborate on any of my projects (more
-      on github).
-    </p>
-    <div class="link-bar">
-      <a href="mailto:webmasternikos@gmail.com" target="_blank" rel="noreferrer" class="link-item">
-        ${EmailIcon}
-      </a>
-      <a href="https://github.com/petalas/" target="_blank" rel="noreferrer" class="link-item">
-        ${GithubIcon}
-      </a>
-      <a href="https://www.linkedin.com/in/petalas/" target="_blank" rel="noreferrer" class="link-item">
-        ${LinkedinIcon}
-      </a>
-      <a href="https://artgen.xyz/" target="_blank" rel="noreferrer" class="link-item">
-        ${ArtgenIcon}
-      </a>
-      <a href="https://www.instagram.com/petalas.dev/" target="_blank" rel="noreferrer" class="link-item">
-        ${InstagramIcon}
-      </a>
-      <a
-        href="/Nick_Petalas_CV.pdf"
-        download="Nick_Petalas_CV.pdf"
-        target="_blank"
-        rel="noreferrer"
-        class="link-item"
-      >
-        ${CVIcon}
-      </a>
+    <div class="contact-content">
+      <div class="contact-header">
+        <h2>Let's Connect</h2>
+        <p class="contact-tagline">Available for new opportunities and collaborations.</p>
+      </div>
+
+      <div class="contact-main">
+        <p>
+          I'm actively seeking new opportunities and would love to hear from you. Whether you have a role that might be a good fit, want to collaborate on a project, or just want to say hello.
+        </p>
+        <div class="contact-buttons">
+          <a href="mailto:webmasternikos@gmail.com" class="contact-cta">
+            ${EmailIcon}
+            <span>Send me an email</span>
+          </a>
+          <a href="/Nick_Petalas_CV.pdf" download="Nick_Petalas_CV.pdf" class="contact-cta">
+            ${CVIcon}
+            <span>Download CV (pdf)</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="social-section">
+        <h3>Connect & Follow</h3>
+        <div class="social-links">
+          <a href="https://github.com/petalas/" target="_blank" rel="noreferrer" class="social-link" title="GitHub">
+            ${GithubIcon}
+          </a>
+          <a href="https://www.linkedin.com/in/petalas/" target="_blank" rel="noreferrer" class="social-link" title="LinkedIn">
+            ${LinkedinIcon}
+          </a>
+          <a href="https://artgen.xyz/" target="_blank" rel="noreferrer" class="social-link" title="Artgen">
+            ${ArtgenIcon}
+          </a>
+          <a href="https://www.instagram.com/petalas.dev/" target="_blank" rel="noreferrer" class="social-link" title="Instagram">
+            ${InstagramIcon}
+          </a>
+        </div>
+      </div>
     </div>
   `;
 }
