@@ -125,6 +125,7 @@ const positions: Position[] = [
       <ul class="m-2 p-2 list-disc list-outside">
         <li>Core <strong>web platform</strong> team member and <strong>Technical Lead</strong> for the "Learn" team.</li>
         <li>Architected and built multiple platform iterations, transitioning from legacy <code>Angular</code> to <code>StencilJS</code>, then to <code>Microsoft FAST</code> with custom web components and design systems.</li>
+        <li>Collaborated with client teams using <code>React</code>, contributing to integrations.</li>
         <li>Mentored developers, onboarded new starters, and provided tier 3 support.</li>
         <li>Contributed to <code>Genx CLI</code>, low-code tools, app seeds, and custom <code>Docusaurus</code> plugins.</li>
         <li>Performed DevOps work including <code>AWS Amplify</code>, <code>GitHub pipelines</code>, and Infrastructure as Code.</li>
@@ -141,7 +142,7 @@ const positions: Position[] = [
         <li><strong>CorResilience:</strong> health coaching app with lab and Fitbit integration.</li>
         <li><strong>WellteQ:</strong> wellness app (<code>Ionic</code>, <code>Cordova</code>, <code>Node.js</code>, <code>Java</code>, <code>MySQL</code>, <code>MongoDB</code>).</li>
         <li><strong>Gift & Go:</strong> B2B rewards platform (<code>Java 11</code>, <code>Spring Boot</code>, <code>Angular</code>, <code>AWS</code>, <code>Docker</code>, microservices). Led refactoring, microservice extraction, performance optimization, API development for clients incl. Scientific Games.</li>
-        <li><strong>Go Fast:</strong> internal rapid prototyping toolset (<code>Angular 7</code>, <code>NestJS</code>).</li>
+        <li><strong>Go Fast:</strong> internal rapid prototyping toolset (<code>React</code>, <code>Angular</code>, <code>NestJS</code>).</li>
       </ul>
     `,
   },
@@ -165,7 +166,7 @@ const positions: Position[] = [
       <ul class="m-2 p-2 list-disc list-outside">
         <li>Designed and developed internal tools and knowledge extraction systems for the Erybo project (<code>Java</code>, <code>SQL</code>, <code>RDF</code>, <code>Jsoup</code>, <code>Selenium</code>, <code>Apache Jena</code>).</li>
         <li>Built automated media processing tools (<code>Java</code>, <code>ffmpeg</code>), trivia content generators, and entity parsers.</li>
-        <li>Developed services and parts of the <strong>Quizedia Android app</strong>.</li>
+        <li>Developed services and parts of the Quizedia Android app.</li>
         <li>Trained and supervised interns in scraping and quiz generation.</li>
       </ul>
     `,

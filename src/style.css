@@ -469,3 +469,18 @@ svg {
 .link-bar:after {
   @apply border-latte-blue dark:border-mocha-blue;
 }
+
+/* Inline code styling for employment descriptions */
+#experience code {
+  @apply px-1 py-0.5;
+  @apply bg-latte-surface0/50 dark:bg-mocha-surface0/50;
+  @apply text-latte-mauve dark:text-mocha-mauve;
+  @apply rounded;
+  @apply text-[0.9em] font-medium;
+  @apply transition-all duration-100;
+}
+
+#experience code:hover {
+  @apply bg-latte-surface0/70 dark:bg-mocha-surface0/70;
+  @apply text-latte-mauve dark:text-mocha-mauve;
+}
