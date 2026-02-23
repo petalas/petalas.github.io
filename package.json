@@ -16,7 +16,7 @@
     "deploy": "npm run build && npm run add-domain && gh-pages -d dist -b deploy-branch -f"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.0",
+    "@tailwindcss/postcss": "^4.2.1",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "prettier": "^3.8.1",
