@@ -471,6 +471,68 @@ svg {
 }
 
 /* Inline code styling for employment descriptions */
+/* Screenshot carousel */
+.screenshot-carousel {
+  @apply bg-latte-crust/50 dark:bg-mocha-crust/50;
+}
+
+.carousel-track {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-phone-img {
+  width: 160px;
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  .carousel-phone-img {
+    width: 180px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-phone-img {
+    width: 200px;
+  }
+}
+
+.carousel-nav-btn {
+  @apply absolute top-1/2 -translate-y-1/2;
+  @apply w-9 h-9 flex items-center justify-center;
+  @apply bg-latte-surface0/80 dark:bg-mocha-surface0/80;
+  @apply backdrop-blur-sm;
+  @apply rounded-full;
+  @apply text-latte-text dark:text-mocha-text;
+  @apply hover:bg-latte-surface1 dark:hover:bg-mocha-surface1;
+  @apply hover:text-latte-blue dark:hover:text-mocha-blue;
+  @apply transition-all duration-150;
+  @apply cursor-pointer;
+  @apply shadow-md;
+  @apply border border-latte-overlay0/30 dark:border-mocha-overlay0/30;
+  @apply z-10;
+  /* offset for the dots area below */
+  margin-top: -16px;
+}
+
+.carousel-nav-btn:hover {
+  @apply shadow-lg scale-110;
+}
+
+.app-store-badge:hover {
+  @apply no-underline;
+}
+
+.app-store-badge span {
+  @apply text-white;
+}
+
+/* Inline code styling for employment descriptions */
 #experience code {
   @apply px-1 py-0.5;
   @apply bg-latte-surface0/50 dark:bg-mocha-surface0/50;

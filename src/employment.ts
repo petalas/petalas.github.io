@@ -106,12 +106,13 @@ const positions: Position[] = [
     timeframe: `Feb 2025 – Present`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Founded and led development of a <strong>health and fitness tracking platform</strong> focused on simplicity, consistency, and meaningful user outcomes.</li>
+        <li>Founded and led development of a <strong>health and fitness tracking platform</strong> across web and <strong>iOS</strong>, focused on simplicity, consistency, and meaningful user outcomes.</li>
         <li>Defined product vision and oversaw all aspects of engineering, UX design, and long-term roadmap planning.</li>
-        <li>Designed and implemented scalable full-stack architecture using <code>Next.js</code>, <code>React 19</code>, <code>Supabase</code>, <code>AWS</code>, and <code>Vercel</code>.</li>
-        <li>Built core features including food logging, goal tracking, and barcode scanning with integrations like <code>USDA FoodData Central</code> and <code>OpenFoodFacts</code>.</li>
-        <li>Designed database schema to support efficient querying, user-specific goal logic, streak tracking, and historical analytics.</li>
-        <li>Developed <strong>CI/CD workflows</strong> and infrastructure automation to enable rapid iteration and high availability.</li>
+        <li>Designed and implemented scalable full-stack architecture using <code>Next.js</code>, <code>React Native (Expo)</code>, <code>Convex</code>, and <code>Vercel</code>.</li>
+        <li>Built and shipped an <strong>iOS app</strong> with nutrition tracking, workout logging, Apple Health integration, streak systems, and in-app subscriptions via <code>RevenueCat</code>.</li>
+        <li>Built core features including food logging, goal tracking, workout tracking, and barcode scanning with integrations like <code>USDA FoodData Central</code> and <code>OpenFoodFacts</code>.</li>
+        <li>Designed real-time database schema to support efficient querying, user-specific goal logic, streak tracking, and historical analytics.</li>
+        <li>Developed <strong>CI/CD workflows</strong> and infrastructure automation including automated TestFlight builds and deployments.</li>
         <li>Led user research, customer support, and iterative product improvements based on feedback.</li>
         <li>Drove growth strategy, marketing initiatives, and early-stage community building.</li>
       </ul>

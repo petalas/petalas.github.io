@@ -57,7 +57,7 @@ const faqs: FAQ[] = [
   },
   {
     question: "What is DailyGoal.fit?",
-    answer: `DailyGoal.fit is a health and fitness tracking platform I founded and am currently building. It focuses on helping people achieve their goals through consistency and simplicity, featuring nutrition tracking, goal setting, and progress monitoring.`,
+    answer: `DailyGoal.fit is a health and fitness tracking platform I founded, available as an <strong>iOS app</strong> and web app. It focuses on helping people achieve their goals through consistency and simplicity, featuring nutrition tracking, workout logging, goal setting, streak systems, and progress analytics.`,
   },
   {
     question: "How can I get in touch?",
