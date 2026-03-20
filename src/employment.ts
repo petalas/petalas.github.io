@@ -106,7 +106,7 @@ const positions: Position[] = [
     timeframe: `Sep 2025 – Present`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Lead frontend developer on multiple concurrent projects within the Game Innovation department, taking ownership from design through to delivery.</li>
+        <li>Lead frontend developer on multiple concurrent projects within the Game Innovation department, building with <code>React</code>, <code>Zustand</code>, <code>Protobuf</code>, and <code>Docker</code>.</li>
         <li>Led the end-to-end frontend development of <strong>Operation Tools</strong>, coordinating closely with backend engineers for seamless integration.</li>
         <li>Sole developer and project lead on the <strong>Backoffice Template Service</strong> — independently designed the architecture, implemented localization, comprehensive test coverage, and a multi-stage <code>Docker</code> deployment pipeline.</li>
         <li>Contributed to the development and launch of the <strong>MMD</strong> and <strong>M12D</strong> projects, expanding the template service to support additional products.</li>
