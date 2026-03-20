@@ -117,7 +117,7 @@ const positions: Position[] = [
   {
     title: `Founder & Lead Engineer`,
     name: `DailyGoal.fit`,
-    timeframe: `Feb 2025 – Present`,
+    timeframe: `Oct 2024 – Present`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
         <li>Founded and shipped a <strong>health and fitness tracking platform</strong> across web and <strong>iOS</strong> (live on the App Store), focused on simplicity, consistency, and meaningful user outcomes.</li>

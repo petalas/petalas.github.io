@@ -308,8 +308,8 @@ const projects: Project[] = [
     img: `images/artgen.png`,
     description: `
       <h3>A heuristic vector art generator.</h3>
-      <p>Uses genetic algorithms to evolve layered semi-transparent polygons, approximating a target image. Original version built in Java.</p>
-      <p>Currently rewriting in Rust with GPU-accelerated evolution (wgpu compute shaders), portable SIMD, and a Leptos/WASM real-time viewer.</p>
+      <p>Uses genetic algorithms to evolve layered semi-transparent polygons, approximating a target image. The web version is built with StencilJS, Rust/WASM, and Firebase.</p>
+      <p>Also built standalone versions in Java (multithreaded) and Rust with GPU-accelerated evolution (wgpu compute shaders), portable SIMD, and a Leptos/WASM real-time viewer.</p>
     `,
   },
   {
