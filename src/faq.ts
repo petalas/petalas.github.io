@@ -49,11 +49,11 @@ interface FAQ {
 const faqs: FAQ[] = [
   {
     question: "What technologies do you specialize in?",
-    answer: `I specialize in full-stack web development with a focus on <strong>TypeScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, and <strong>AWS</strong>. I also have extensive experience with Java, Python, SQL databases, and DevOps practices.`,
+    answer: `I specialize in full-stack development with a focus on <strong>TypeScript</strong>, <strong>React</strong>, <strong>React Native</strong>, and <strong>Node.js</strong>. I build across web and iOS, and also have extensive experience with Java, Python, SQL databases, and DevOps practices.`,
   },
   {
     question: "Are you available for freelance work?",
-    answer: `Currently, I'm focused on building <a href="https://www.dailygoal.fit" target="_blank" rel="noopener noreferrer" class="text-latte-blue dark:text-mocha-blue hover:underline">DailyGoal.fit</a>. However, I'm always open to discussing interesting opportunities and potential collaborations.`,
+    answer: `I'm currently employed as a Senior Frontend Developer at Eeze and running <a href="https://www.dailygoal.fit" target="_blank" rel="noopener noreferrer" class="text-latte-blue dark:text-mocha-blue hover:underline">DailyGoal.fit</a> on the side. I'm not actively looking, but if you think you have a role that's a really good fit, I'd love to hear about it — feel free to reach out.`,
   },
   {
     question: "What is DailyGoal.fit?",
