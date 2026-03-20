@@ -106,11 +106,11 @@ const positions: Position[] = [
     timeframe: `Sep 2025 – Present`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Lead frontend developer on multiple concurrent projects within the Game Innovation department, building with <code>React</code>, <code>Zustand</code>, <code>Protobuf</code>, and <code>Docker</code>.</li>
+        <li>Lead frontend developer across multiple concurrent iGaming projects in the Game Innovation department, building with <code>React</code>, <code>Zustand</code>, <code>Protobuf</code>, and <code>Docker</code>.</li>
         <li>Led the end-to-end frontend development of <strong>Operation Tools</strong>, coordinating closely with backend engineers for seamless integration.</li>
-        <li>Sole developer and project lead on the <strong>Backoffice Template Service</strong> — independently designed the architecture, implemented localization, comprehensive test coverage, and a multi-stage <code>Docker</code> deployment pipeline.</li>
-        <li>Contributed to the development and launch of the <strong>MMD</strong> and <strong>M12D</strong> iGaming projects, expanding the template service to support additional products.</li>
-        <li>Preparing to lead frontend development on the upcoming <strong>Fortune Journey</strong> project.</li>
+        <li>Sole developer and project lead on the <strong>Backoffice Template Service</strong> — designed the architecture, implemented localization, comprehensive test coverage, and a multi-stage <code>Docker</code> deployment pipeline. The service became a <strong>reusable platform</strong> adopted across multiple products.</li>
+        <li>Co-delivered the <strong>MMD</strong> and <strong>M12D</strong> iGaming projects, integrating template service support and contributing through to launch.</li>
+        <li>Selected to lead frontend development on an upcoming iGaming project.</li>
       </ul>
     `,
   },
@@ -120,7 +120,7 @@ const positions: Position[] = [
     timeframe: `Feb 2025 – Present`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Founded and led development of a <strong>health and fitness tracking platform</strong> across web and <strong>iOS</strong>, focused on simplicity, consistency, and meaningful user outcomes.</li>
+        <li>Founded and shipped a <strong>health and fitness tracking platform</strong> across web and <strong>iOS</strong> (live on the App Store), focused on simplicity, consistency, and meaningful user outcomes.</li>
         <li>Defined product vision and oversaw all aspects of engineering, UX design, and long-term roadmap planning.</li>
         <li>Designed and implemented scalable full-stack architecture using <code>Next.js</code>, <code>React Native (Expo)</code>, <code>Convex</code>, and <code>Vercel</code>.</li>
         <li>Built and shipped an <strong>iOS app</strong> with nutrition tracking, workout logging, Apple Health integration, streak systems, and in-app subscriptions via <code>RevenueCat</code>.</li>
@@ -138,12 +138,12 @@ const positions: Position[] = [
     timeframe: `Dec 2019 – Oct 2024`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Core <strong>web platform</strong> team member and <strong>Technical Lead</strong> for the "Learn" team.</li>
-        <li>Architected and built multiple platform iterations, transitioning from legacy <code>Angular</code> to <code>StencilJS</code>, then to <code>Microsoft FAST</code> with custom web components and design systems.</li>
-        <li>Collaborated with client teams using <code>React</code>, contributing to integrations.</li>
-        <li>Mentored developers, onboarded new starters, and provided tier 3 support.</li>
-        <li>Contributed to <code>Genx CLI</code>, low-code tools, app seeds, and custom <code>Docusaurus</code> plugins.</li>
-        <li>Performed DevOps work including <code>AWS Amplify</code>, <code>GitHub pipelines</code>, and Infrastructure as Code.</li>
+        <li><strong>Technical Lead</strong> for the "Learn" team and core member of the <strong>web platform</strong> team over a 5-year tenure.</li>
+        <li>Led the modernization of the web platform across three generations — migrating from legacy <code>Angular</code> to <code>StencilJS</code>, then to <code>Microsoft FAST</code> with custom web components and a bespoke design system.</li>
+        <li>Collaborated with client teams on <code>React</code> integrations, bridging platform and product engineering.</li>
+        <li>Mentored developers, onboarded new starters, and served as tier 3 escalation point for platform issues.</li>
+        <li>Built developer tooling including <code>Genx CLI</code>, low-code scaffolding, app seeds, and custom <code>Docusaurus</code> plugins.</li>
+        <li>Owned DevOps responsibilities including <code>AWS Amplify</code>, <code>GitHub Actions</code> pipelines, and Infrastructure as Code.</li>
       </ul>
     `,
   },
@@ -153,11 +153,10 @@ const positions: Position[] = [
     timeframe: `Sep 2018 – Dec 2019`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Full-stack engineer across multiple high-impact projects.</li>
-        <li><strong>CorResilience:</strong> health coaching app with lab and Fitbit integration.</li>
-        <li><strong>WellteQ:</strong> wellness app (<code>Ionic</code>, <code>Cordova</code>, <code>Node.js</code>, <code>Java</code>, <code>MySQL</code>, <code>MongoDB</code>).</li>
-        <li><strong>Gift & Go:</strong> B2B rewards platform (<code>Java 11</code>, <code>Spring Boot</code>, <code>Angular</code>, <code>AWS</code>, <code>Docker</code>, microservices). Led refactoring, microservice extraction, performance optimization, API development for clients incl. Scientific Games.</li>
-        <li><strong>Go Fast:</strong> internal rapid prototyping toolset (<code>React</code>, <code>Angular</code>, <code>NestJS</code>).</li>
+        <li>Full-stack engineer delivering across mobile, web, and backend on four concurrent client projects.</li>
+        <li>Led major refactoring and microservice extraction on <strong>Gift & Go</strong>, a B2B rewards platform (<code>Java 11</code>, <code>Spring Boot</code>, <code>Angular</code>, <code>AWS</code>, <code>Docker</code>) — built APIs for enterprise clients including <strong>Scientific Games</strong>.</li>
+        <li>Shipped <strong>CorResilience</strong> (health coaching app with lab and Fitbit integration) and <strong>WellteQ</strong> (wellness platform — <code>Ionic</code>, <code>Cordova</code>, <code>Node.js</code>, <code>Java</code>, <code>MySQL</code>, <code>MongoDB</code>).</li>
+        <li>Built <strong>Go Fast</strong>, an internal rapid prototyping toolset (<code>React</code>, <code>Angular</code>, <code>NestJS</code>).</li>
       </ul>
     `,
   },
@@ -167,7 +166,7 @@ const positions: Position[] = [
     timeframe: `Feb 2017 – Sep 2018`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Built and maintained tools for online betting clients: client portals, payment systems, trader and bet management, reporting, and retail cashier systems.</li>
+        <li>Built and maintained iGaming platform tools for online betting clients: client portals, payment systems, trader and bet management, reporting, and retail cashier systems.</li>
         <li>Focused on <code>Java</code> and <code>SQL</code> back-end development.</li>
         <li>Maintained legacy systems (<code>PrimeFaces</code>, <code>Oracle WebLogic</code>).</li>
       </ul>
