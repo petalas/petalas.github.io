@@ -19,7 +19,7 @@ export function setupLinks(element: HTMLElement) {
             ${EmailIcon}
             <span>Send me an email</span>
           </a>
-          <a href="/Nick_Petalas_CV_v2.pdf" download="Nick_Petalas_CV_v2.pdf" class="contact-cta">
+          <a href="/Nick_Petalas_CV.pdf" download="Nick_Petalas_CV.pdf" class="contact-cta">
             ${CVIcon}
             <span>Download CV (pdf)</span>
           </a>
