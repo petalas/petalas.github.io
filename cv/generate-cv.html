@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    line-height: 1.35;
+    color: #1a1a1a;
+    padding: 32px 48px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .header-left { font-size: 9pt; color: #444; }
+  .header-center { text-align: center; }
+  .header-center h1 { font-size: 20pt; font-weight: 700; color: #1a1a1a; }
+  .header-right { text-align: right; font-size: 9pt; }
+  .header-right a { color: #1a7a8a; text-decoration: none; }
+
+  /* Section headings */
+  h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    border-bottom: 1.5px solid #1a1a1a;
+    padding-bottom: 2px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+  }
+
+  /* Job header */
+  .job {
+    margin-bottom: 8px;
+  }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  .job-title { font-weight: 700; font-size: 10pt; }
+  .job-company { font-weight: 700; font-size: 10pt; }
+  .job-date { font-size: 9.5pt; color: #333; white-space: nowrap; }
+
+  /* Bullet lists */
+  ul {
+    margin-left: 16px;
+    margin-top: 2px;
+  }
+  ul li {
+    margin-bottom: 1px;
+    padding-left: 1px;
+  }
+  ul ul {
+    margin-top: 1px;
+    list-style-type: circle;
+  }
+  ul ul li {
+    margin-bottom: 0px;
+  }
+
+  b, strong { font-weight: 600; }
+
+  /* Education */
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  .edu-location { font-weight: 700; font-size: 10pt; }
+  .edu-school { font-weight: 700; font-size: 10pt; }
+  .edu-date { font-size: 9.5pt; color: #333; }
+
+  /* Other sections */
+  .other-intro {
+    margin-bottom: 5px;
+  }
+
+  .projects-label {
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .lang-section ul { margin-top: 4px; }
+
+  /* Avoid breaking inside a job entry */
+  .job { page-break-inside: avoid; }
+
+  a { color: #1a7a8a; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="header-left">
+    London, UK<br>
+    +44 7555 526894
+  </div>
+  <div class="header-center">
+    <h1>Nick Petalas</h1>
+  </div>
+  <div class="header-right">
+    <a href="mailto:nikolaos.petalas@gmail.com">nikolaos.petalas@gmail.com</a><br>
+    <a href="https://petalas.dev">petalas.dev</a>
+  </div>
+</div>
+
+<!-- Employment -->
+<h2>Employment</h2>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Senior Frontend Developer</span>
+    <span class="job-company">Eeze (Game Innovation)</span>
+    <span class="job-date">Sep 2025 – Present</span>
+  </div>
+  <ul>
+    <li>Lead frontend developer across multiple concurrent iGaming projects, building with <strong>React</strong>, <strong>Zustand</strong>, <strong>Protobuf</strong>, and <strong>Docker</strong>.</li>
+    <li>Led the end-to-end frontend development of <strong>Operation Tools</strong>, coordinating closely with backend engineers for seamless integration.</li>
+    <li>Sole developer and project lead on the <strong>Backoffice Template Service</strong> — designed the architecture, implemented localization, comprehensive test coverage, and a multi-stage Docker deployment pipeline. The service became a reusable platform adopted across multiple products.</li>
+    <li>Co-delivered the <strong>MMD</strong> and <strong>M12D</strong> iGaming projects, integrating template service support and contributing through to launch.</li>
+    <li>Selected to lead frontend development on an upcoming iGaming project.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Founder & Lead Engineer</span>
+    <span class="job-company">DailyGoal.fit</span>
+    <span class="job-date">Feb 2025 – Present</span>
+  </div>
+  <ul>
+    <li>Founded and shipped a <strong>health and fitness tracking platform</strong> across web and <strong>iOS</strong> (live on the App Store), focused on simplicity, consistency, and meaningful user outcomes.</li>
+    <li>Defined product vision and oversaw all aspects of engineering, UX design, and long-term roadmap planning.</li>
+    <li>Designed and implemented scalable full-stack architecture using <strong>Next.js</strong>, <strong>React Native (Expo)</strong>, <strong>Convex</strong>, and <strong>Vercel</strong>.</li>
+    <li>Built and shipped an iOS app with nutrition tracking, workout logging, Apple Health integration, streak systems, and in-app subscriptions via <strong>RevenueCat</strong>.</li>
+    <li>Built core features including food logging, goal tracking, workout tracking, and barcode scanning with integrations like USDA FoodData Central and OpenFoodFacts.</li>
+    <li>Designed real-time database schema to support efficient querying, user-specific goal logic, streak tracking, and historical analytics.</li>
+    <li>Developed <strong>CI/CD workflows</strong> and infrastructure automation including automated TestFlight builds and deployments.</li>
+    <li>Led user research, customer support, and iterative product improvements based on feedback.</li>
+    <li>Drove growth strategy, marketing initiatives, and early-stage community building.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Senior Software Engineer</span>
+    <span class="job-company">Genesis Global Technology LTD</span>
+    <span class="job-date">Dec 2019 – Oct 2024</span>
+  </div>
+  <ul>
+    <li><strong>Technical Lead</strong> for the "Learn" team and core member of the web platform team over a 5-year tenure.</li>
+    <li>Led the modernization of the web platform across three generations — migrating from legacy <strong>Angular</strong> to <strong>StencilJS</strong>, then to <strong>Microsoft FAST</strong> with custom web components and a bespoke design system.</li>
+    <li>Collaborated with client teams on <strong>React</strong> integrations, bridging platform and product engineering.</li>
+    <li>Mentored developers, onboarded new starters, and served as tier 3 escalation point for platform issues.</li>
+    <li>Built developer tooling including <strong>Genx CLI</strong>, low-code scaffolding, app seeds, and custom <strong>Docusaurus</strong> plugins.</li>
+    <li>Owned DevOps responsibilities including <strong>AWS Amplify</strong>, <strong>GitHub Actions</strong> pipelines, and Infrastructure as Code.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Software Engineer</span>
+    <span class="job-company">Elemental Concept LTD</span>
+    <span class="job-date">Sep 2018 – Dec 2019</span>
+  </div>
+  <ul>
+    <li>Full-stack engineer delivering across mobile, web, and backend on four concurrent client projects.</li>
+    <li>Led major refactoring and microservice extraction on <strong>Gift & Go</strong>, a B2B rewards platform (<strong>Java 11</strong>, <strong>Spring Boot</strong>, <strong>Angular</strong>, <strong>AWS</strong>, <strong>Docker</strong>) — built APIs for enterprise clients including <strong>Scientific Games</strong>.</li>
+    <li>Shipped <strong>CorResilience</strong> (health coaching app with lab and Fitbit integration) and <strong>WellteQ</strong> (wellness platform — Ionic, Cordova, Node.js, Java, MySQL, MongoDB).</li>
+    <li>Built <strong>Go Fast</strong>, an internal rapid prototyping toolset (React, Angular, NestJS).</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Software Engineer</span>
+    <span class="job-company">Enigma Software Solutions LTD</span>
+    <span class="job-date">Feb 2017 – Sep 2018</span>
+  </div>
+  <ul>
+    <li>Built and maintained iGaming platform tools for online betting clients: client portals, payment systems, trader and bet management, reporting, and retail cashier systems.</li>
+    <li>Focused on <strong>Java</strong> and <strong>SQL</strong> back-end development.</li>
+    <li>Maintained legacy systems (PrimeFaces, Oracle WebLogic).</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span class="job-title">Software Engineer</span>
+    <span class="job-company">Safemarket LTD</span>
+    <span class="job-date">Dec 2014 – Oct 2016</span>
+  </div>
+  <ul>
+    <li>Designed and developed internal tools and knowledge extraction systems for the Erybo project (<strong>Java</strong>, SQL, RDF, Jsoup, Selenium, Apache Jena).</li>
+    <li>Built automated media processing tools (Java, <strong>ffmpeg</strong>), trivia content generators, and entity parsers.</li>
+    <li>Developed services and parts of the Quizedia Android app.</li>
+    <li>Trained and supervised interns in scraping and quiz generation.</li>
+  </ul>
+</div>
+
+<!-- Education -->
+<h2>Education</h2>
+<div class="edu-header">
+  <span class="edu-location">Thessaloniki, Greece</span>
+  <span class="edu-school">University of Macedonia</span>
+  <span class="edu-date">Oct 2012 – Oct 2015</span>
+</div>
+<p>BSc In Applied Informatics. Final Grade: 7.7 / 10</p>
+<p>Thesis: A study on Optimization of Object-Oriented Design using Genetic Algorithms.<br>
+Grade: 10 / 10; Supervisor: Alexander Chatzigeorgiou.</p>
+
+<!-- Other Technical Experience -->
+<h2>Other Technical Experience</h2>
+<p class="other-intro">I'm proficient across Windows, macOS, and Linux, and prefer working in the command line whenever possible. I have a strong personal interest in systems architecture, networking, filesystems, databases, and automation. I'm continuously learning and exploring new technologies through hands-on personal projects.</p>
+
+<p class="projects-label">Selected Projects:</p>
+<ul>
+  <li><strong>Homelab:</strong> Built and maintained a Proxmox-based homelab running multiple VMs, including:
+    <ul>
+      <li><strong>TrueNAS VM</strong> with HBA passthrough for an 8-drive <strong>RAIDZ2 NAS</strong>.</li>
+      <li><strong>Debian VM</strong> running dockerized services: Traefik, Plex, Radarr, Sonarr, Lidarr, SABnzbd, qBittorrent, Filebrowser, Glances, Netdata, Home Assistant, and more.</li>
+      <li>Managed my own network stack: OPNsense router (on N100 box), Pi-hole for DNS-level adblocking, Unbound as recursive resolver, and Omada SDN Controller for access point management.</li>
+    </ul>
+  </li>
+  <li><strong>Heuristic Vector Image Generator:</strong> Created a genetic algorithm to recreate images using layered semi-transparent polygons. Developed in Java (multithreaded), with an in-progress <strong>Rust rewrite using portable SIMD</strong>. A web-based version is available at artgen.xyz.</li>
+  <li><strong>FreeCell Solitaire Solver:</strong> Wrote a solver for FreeCell puzzles using custom heuristics and graph traversal algorithms (BFS, DFS, A*, Best-First). (Java)</li>
+  <li><strong>Banknote Authentication:</strong> Designed a neural network in MATLAB to classify banknotes as genuine or forged, achieving 100% accuracy on a UCI dataset.</li>
+  <li><strong>Custom Database Merger:</strong> Built a system to augment a large RDF database (based on Freebase) by scraping websites, performing entity recognition (OpenNLP), and fact extrapolation. (Java, MySQL, RDF)</li>
+  <li><strong>BTC Risk Metric:</strong> Developed a custom Bitcoin risk oscillator, combining metrics like EMA ratios, RSI, Mayer Multiple, Puell Multiple, and others to assess cyclical risk. Published as a TradingView indicator.</li>
+  <li><strong>OpenSCAD Modeling:</strong> Created programmatic 3D models for printing using OpenSCAD, combining scripting with parametric design.</li>
+  <li><strong>Auto Conf Scripts:</strong> Maintained a cross-platform setup automation suite for Linux/macOS. It installs hundreds of dependencies, patches fonts, configures zsh, clones repos, and links dotfiles to streamline new machine provisioning.</li>
+</ul>
+
+<!-- Programming Languages -->
+<h2>Programming Languages</h2>
+<ul class="lang-section">
+  <li><strong>Primary focus:</strong> TypeScript / JavaScript (React, React Native, Node.js, and experience with multiple other frameworks and native web components), HTML, CSS, Bash (scripting), Dockerfiles.</li>
+  <li><strong>Previously used professionally:</strong> Java, Kotlin, Python, SQL.</li>
+  <li><strong>Limited experience:</strong> C, C++, R, PHP, MATLAB, SPARQL.</li>
+  <li><strong>Currently learning:</strong> Rust and Elixir.</li>
+  <li>Always eager to learn new languages and adapt to different ecosystems.</li>
+</ul>
+
+</body>
+</html>
