@@ -5,17 +5,12 @@ export function setupLinks(element: HTMLElement) {
 
   element.innerHTML = `
     <div class="contact-content">
-      <div class="contact-header">
-        <h2>Let's Connect</h2>
-        <p class="contact-tagline">Senior Frontend Developer at Eeze | Founder of DailyGoal.fit</p>
-      </div>
-
       <div class="contact-main">
         <p>
-          I'm not actively looking for a new role, but I'm always open to hearing about opportunities that are a really good fit. Whether you have a role in mind, want to collaborate on a project, or just want to say hello — feel free to reach out.
+          I'm open to new opportunities. If you have a role in mind, want to collaborate on something, or just want to say hello — drop me a line.
         </p>
         <div class="contact-buttons">
-          <a href="mailto:webmasternikos@gmail.com" class="contact-cta">
+          <a href="mailto:nikolaos.petalas@gmail.com" class="contact-cta">
             ${EmailIcon}
             <span>Send me an email</span>
           </a>
