@@ -308,8 +308,8 @@ const projects: Project[] = [
     img: `images/artgen.png`,
     description: `
       <h3>A heuristic vector art generator.</h3>
-      <p>It generates 'abstract art' pieces using genetic algorithms to 'evolve' a set of semi-transparent polygons, attempting to recreate a target image.</p>
-      <p>I'm also working on a multithreaded + SIMD version (Rust).</p>
+      <p>Uses genetic algorithms to evolve layered semi-transparent polygons, approximating a target image. Original version built in Java.</p>
+      <p>Currently rewriting in Rust with GPU-accelerated evolution (wgpu compute shaders), portable SIMD, and a Leptos/WASM real-time viewer.</p>
     `,
   },
   {
