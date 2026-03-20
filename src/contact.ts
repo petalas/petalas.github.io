@@ -7,19 +7,19 @@ export function setupLinks(element: HTMLElement) {
     <div class="contact-content">
       <div class="contact-header">
         <h2>Let's Connect</h2>
-        <p class="contact-tagline">Available for new opportunities and collaborations.</p>
+        <p class="contact-tagline">Senior Frontend Developer at Eeze | Founder of DailyGoal.fit</p>
       </div>
 
       <div class="contact-main">
         <p>
-          I'm actively seeking new opportunities and would love to hear from you. Whether you have a role that might be a good fit, want to collaborate on a project, or just want to say hello.
+          I'm not actively looking for a new role, but I'm always open to hearing about opportunities that are a really good fit. Whether you have a role in mind, want to collaborate on a project, or just want to say hello — feel free to reach out.
         </p>
         <div class="contact-buttons">
           <a href="mailto:webmasternikos@gmail.com" class="contact-cta">
             ${EmailIcon}
             <span>Send me an email</span>
           </a>
-          <a href="/Nick_Petalas_CV.pdf" download="Nick_Petalas_CV.pdf" class="contact-cta">
+          <a href="/Nick_Petalas_CV_v2.pdf" download="Nick_Petalas_CV_v2.pdf" class="contact-cta">
             ${CVIcon}
             <span>Download CV (pdf)</span>
           </a>
