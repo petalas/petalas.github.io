@@ -101,6 +101,20 @@ interface Position {
 
 const positions: Position[] = [
   {
+    title: `Senior Frontend Developer`,
+    name: `Eeze (Game Innovation)`,
+    timeframe: `Sep 2025 – Present`,
+    description: `
+      <ul class="m-2 p-2 list-disc list-outside">
+        <li>Lead frontend developer on multiple concurrent projects within the Game Innovation department, taking ownership from design through to delivery.</li>
+        <li>Led the end-to-end frontend development of <strong>Operation Tools</strong>, coordinating closely with backend engineers for seamless integration.</li>
+        <li>Sole developer and project lead on the <strong>Backoffice Template Service</strong> — independently designed the architecture, implemented localization, comprehensive test coverage, and a multi-stage <code>Docker</code> deployment pipeline.</li>
+        <li>Contributed to the development and launch of the <strong>MMD</strong> and <strong>M12D</strong> projects, expanding the template service to support additional products.</li>
+        <li>Preparing to lead frontend development on the upcoming <strong>Fortune Journey</strong> project.</li>
+      </ul>
+    `,
+  },
+  {
     title: `Founder & Lead Engineer`,
     name: `DailyGoal.fit`,
     timeframe: `Feb 2025 – Present`,

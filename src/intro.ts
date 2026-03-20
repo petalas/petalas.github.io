@@ -25,9 +25,9 @@ const introText = () => {
         </p>
         
         <p class="leading-relaxed">
-          Currently <strong>Founder & Lead Engineer</strong> at <a href="https://www.dailygoal.fit/" target="_blank" rel="noopener noreferrer" class="text-latte-blue dark:text-mocha-blue hover:underline"><code>DailyGoal.fit</code></a>,
-          where I'm building an iOS app and web platform to help people achieve their health and fitness goals
-          through consistency and simplicity.
+          Currently <strong>Senior Frontend Developer</strong> at <strong>Eeze</strong>, leading frontend projects in the Game Innovation department.
+          Also the <strong>Founder & Lead Engineer</strong> of <a href="https://www.dailygoal.fit/" target="_blank" rel="noopener noreferrer" class="text-latte-blue dark:text-mocha-blue hover:underline"><code>DailyGoal.fit</code></a>,
+          an iOS app and web platform for health and fitness tracking.
         </p>
         
         <div class="pt-2">
