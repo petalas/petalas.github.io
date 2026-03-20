@@ -4,7 +4,6 @@ import { setupFooter } from "./footer.ts";
 import { setupAbout } from "./intro.ts";
 import { setupNav } from "./nav.ts";
 import { setupProjects } from "./projects.ts";
-// import { setupFAQ } from "./faq.ts"; // Commented out for now
 import "./style.css";
 
 function initializeApp() {
