@@ -149,18 +149,19 @@ const generateProjectSchema = () => {
 const APP_STORE_URL = "https://apps.apple.com/gb/app/dailygoal-fitness-nutrition/id6758465266";
 
 const screenshotLabels = [
-  "Home dashboard",
-  "Food diary",
-  "Food search",
-  "Workout tracker",
-  "Goals setup",
-  "Progress charts",
-  "Body composition",
-  "Welcome screen",
+  "Personalized calorie, protein and step goals",
+  "Workout tracking with sets, reps and rest timers",
+  "Progress charts for weight, body fat and steps",
+  "Smart daily calorie and macro targets",
+  "USDA food search, barcode scanning and saved meals",
+  "Body fat calculator and consistency tools",
+  "Custom goals for macros, habits and routines",
+  "Apple Health sync and the iOS app experience",
+  "Workout tracking with quick-start timers",
 ];
 
 const dailyGoalTemplate = (project: Project): string => {
-  const screenshots = Array.from({ length: 8 }, (_, i) => i + 1);
+  const screenshots = Array.from({ length: 9 }, (_, i) => i + 1);
   const title = `<a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.name}</a>`;
 
   return `
