@@ -11,22 +11,23 @@ This is a personal portfolio website for Nick Petalas (petalas.dev), built with 
 ### Development
 
 ```bash
-npm run dev      # Start Vite dev server on http://localhost:5173
-npm run preview  # Preview production build locally
+bun install
+bun run dev      # Start Vite dev server on http://localhost:5173
+bun run preview  # Preview production build locally
 ```
 
 ### Build & Deploy
 
 ```bash
-npm run build    # TypeScript check + Vite production build
-npm run deploy   # Build and deploy to GitHub Pages (deploy-branch)
+bun run build    # TypeScript check + Vite production build
+bun run deploy   # Build and deploy to GitHub Pages (deploy-branch)
 ```
 
 ### Code Quality
 
 ```bash
-npm run lint     # Check code formatting with Prettier
-npm run format   # Auto-format code with Prettier
+bun run lint     # Check code formatting with Prettier
+bun run format   # Auto-format code with Prettier
 ```
 
 ## Architecture
