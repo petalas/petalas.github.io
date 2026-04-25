@@ -149,19 +149,18 @@ const generateProjectSchema = () => {
 const APP_STORE_URL = "https://apps.apple.com/gb/app/dailygoal-fitness-nutrition/id6758465266";
 
 const screenshotLabels = [
-  "Personalized calorie, protein and step goals",
-  "Workout tracking with sets, reps and rest timers",
-  "Progress charts for weight, body fat and steps",
-  "Smart daily calorie and macro targets",
-  "USDA food search, barcode scanning and saved meals",
-  "Body fat calculator and consistency tools",
-  "Custom goals for macros, habits and routines",
-  "Apple Health sync and the iOS app experience",
-  "Workout tracking with quick-start timers",
+  "Know the target",
+  "Log in seconds",
+  "See the signal",
+  "Execute the plan",
+  "Connect your inputs",
+  "Tune your system",
+  "Keep signal on the home screen",
+  "Glance from the lock screen",
 ];
 
 const dailyGoalTemplate = (project: Project): string => {
-  const screenshots = Array.from({ length: 9 }, (_, i) => i + 1);
+  const screenshots = Array.from({ length: 8 }, (_, i) => i + 1);
   const title = `<a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.name}</a>`;
 
   return `
@@ -243,7 +242,7 @@ const projects: Project[] = [
     description: `
     <p class="my-2 font-semibold">A nutrition, health, and fitness tracking app — available on the <strong>App Store</strong> and web — designed to build lasting discipline and consistency in wellness journeys.</p>
 
-    <p class="my-2">DailyGoal.fit's philosophy centers on slow, sustainable progress that leads to meaningful, long-term improvements in both body composition and overall quality of life. The platform enables users to monitor daily food intake, track macronutrients, log workouts, set customizable goals, and measure progress through various metrics. A personalized onboarding flow calculates custom calorie, protein, and step targets based on individual body stats and fitness goals.</p>
+    <p class="my-2">DailyGoal.fit's philosophy centers on slow, sustainable progress that leads to meaningful, long-term improvements in both body composition and overall quality of life. The platform enables users to monitor daily food intake, track macronutrients, log workouts, set customizable goals, use iOS home and lock screen widgets, and measure progress through various metrics. A personalized onboarding flow calculates custom calorie, protein, and step targets based on individual body stats and fitness goals.</p>
 
     <h4 class="font-semibold mt-3 mb-1">Core Features:</h4>
     <ul class="m-2 p-2 list-disc list-outside space-y-1">
