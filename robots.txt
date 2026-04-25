@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /*.ts$
+
+# Specific bot directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://petalas.dev/sitemap.xml
+
+# Host directive
+Host: https://petalas.dev
+
+# Crawl delay (optional, helps with server load)
+Crawl-delay: 1
