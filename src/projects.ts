@@ -157,10 +157,11 @@ const screenshotLabels = [
   "Tune your system",
   "Keep signal on the home screen",
   "Glance from the lock screen",
+  "Three boards, three timeframes",
 ];
 
 const dailyGoalTemplate = (project: Project): string => {
-  const screenshots = Array.from({ length: 8 }, (_, i) => i + 1);
+  const screenshots = Array.from({ length: screenshotLabels.length }, (_, i) => i + 1);
   const title = `<a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.name}</a>`;
 
   return `
