@@ -148,20 +148,20 @@ const generateProjectSchema = () => {
 
 const APP_STORE_URL = "https://apps.apple.com/gb/app/dailygoal-fitness-nutrition/id6758465266";
 
-const screenshotLabels = [
-  "Know the target",
-  "Log in seconds",
-  "See the signal",
-  "Execute the plan",
-  "Connect your inputs",
-  "Tune your system",
-  "Keep signal on the home screen",
-  "Glance from the lock screen",
-  "Three boards, three timeframes",
+const screenshots = [
+  { file: "home", label: "Know today's target" },
+  { file: "diary", label: "Log food in seconds" },
+  { file: "progress", label: "See the real trend" },
+  { file: "workouts", label: "Execute the plan" },
+  { file: "exercise-library", label: "Pick the movement" },
+  { file: "preferences", label: "Connect Apple Health" },
+  { file: "goal-settings", label: "Tune your targets" },
+  { file: "widgets-home", label: "Keep goals on the Home Screen" },
+  { file: "widgets-lock", label: "Glance from the Lock Screen" },
+  { file: "leaderboard-tabs", label: "Compete on your terms" },
 ];
 
 const dailyGoalTemplate = (project: Project): string => {
-  const screenshots = Array.from({ length: screenshotLabels.length }, (_, i) => i + 1);
   const title = `<a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.name}</a>`;
 
   return `
@@ -172,11 +172,11 @@ const dailyGoalTemplate = (project: Project): string => {
         <div class="carousel-track flex gap-3 overflow-x-auto scroll-smooth p-4 snap-x snap-mandatory scrollbar-hide">
           ${screenshots
             .map(
-              (n) => `
+              ({ file, label }) => `
             <div class="carousel-item snap-start shrink-0">
               <img
-                src="images/dailygoal-screenshots/${n}.png"
-                alt="DailyGoal app — ${screenshotLabels[n - 1] ?? `screenshot ${n}`}"
+                src="images/dailygoal-screenshots/${file}.png"
+                alt="DailyGoal app — ${label}"
                 class="carousel-phone-img rounded-2xl shadow-lg"
                 loading="lazy"
               />
