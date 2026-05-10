@@ -2,10 +2,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        inlineDynamicImports: false,
-        manualChunks: undefined,
+        codeSplitting: false,
       },
     },
     assetsInlineLimit: 0, // Prevent inlining of any assets
