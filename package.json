@@ -22,7 +22,7 @@
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.14",
     "prettier": "^3.8.3",
-    "puppeteer": "^24.43.0",
+    "puppeteer": "^25.0.2",
     "tailwindcss": "^4.3.0",
     "typescript": "~6.0.3",
     "vite": "^8.0.11"
