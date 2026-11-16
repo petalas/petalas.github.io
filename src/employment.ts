@@ -102,15 +102,16 @@ interface Position {
 const positions: Position[] = [
   {
     title: `Senior Frontend Developer`,
-    name: `Eeze (Game Innovation)`,
+    name: `Pixelcoding (Game Innovation Team)`,
     timeframe: `Sep 2025 – Present`,
     description: `
       <ul class="m-2 p-2 list-disc list-outside">
-        <li>Lead frontend developer across multiple concurrent iGaming projects in the Game Innovation department, building with <code>React</code>, <code>Zustand</code>, <code>Protobuf</code>, and <code>Docker</code>.</li>
-        <li>Led the end-to-end frontend development of <strong>Operation Tools</strong>, coordinating closely with backend engineers for seamless integration.</li>
-        <li>Sole developer and project lead on the <strong>Backoffice Template Service</strong> — designed the architecture, implemented localization, comprehensive test coverage, and a multi-stage <code>Docker</code> deployment pipeline. The service became a <strong>reusable platform</strong> adopted across multiple products.</li>
-        <li>Co-delivered the <strong>MMD</strong> and <strong>M12D</strong> iGaming projects, integrating template service support and contributing through to launch.</li>
-        <li>Selected to lead frontend development on an upcoming iGaming project.</li>
+        <li>Lead frontend development across multiple concurrent iGaming projects.</li>
+        <li>Own frontend delivery of backoffice tools for game-result corrections, approval workflows, and settlement operations, including validation and audit comparisons.</li>
+        <li>Implement resilient betting flows with connection recovery, bet validation, and transitions between cash and promotional play.</li>
+        <li>Develop shared frontend libraries and betting state management used across multiple games.</li>
+        <li>Build development mocks and <code>Docker</code> integration environments to reproduce game scenarios and test frontend/backend behaviour.</li>
+        <li><strong>Tech stack:</strong> <code>TypeScript</code>, <code>React</code>, <code>Three.js</code>, <code>Zustand</code>, <code>Protobuf</code>, <code>Docker</code>.</li>
       </ul>
     `,
   },

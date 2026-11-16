@@ -25,7 +25,7 @@ const introText = () => {
         </p>
         
         <p class="leading-relaxed">
-          Currently <strong>Senior Frontend Developer</strong> at <strong>Eeze</strong>, leading frontend projects in the Game Innovation department.
+          Currently <strong>Senior Frontend Developer</strong> at <strong>Pixelcoding</strong>, leading frontend projects in the Game Innovation team.
           Also the <strong>Founder & Lead Engineer</strong> of <a href="https://www.dailygoal.fit/" target="_blank" rel="noopener noreferrer" class="text-latte-blue dark:text-mocha-blue hover:underline"><code>DailyGoal.fit</code></a>,
           an iOS app and web platform for health and fitness tracking.
         </p>
